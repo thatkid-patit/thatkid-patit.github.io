@@ -1,2 +1,2 @@
 # thatkid-patit.github.io
-Personal Repo
+Personal Repository
