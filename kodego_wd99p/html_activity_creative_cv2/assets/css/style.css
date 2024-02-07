@@ -33,7 +33,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 40%;
 }
 
 header>section {
@@ -46,6 +46,7 @@ section img {
     margin-top: 65px;
     height: 125px;
     width: 125px;
+    border-radius: 50%;
 }
 
 section {
@@ -76,9 +77,79 @@ header section.buttons #button-download {
 .font-basic {
     font-family: Roboto-Regular;
     color: var(--primary-light);
-    text-decoration: none !important;
+    text-decoration: none;
+}
+
+.font-basic1 {
+    font-family: Roboto-Regular;
+    color: var(--primary-light);
+    text-decoration: none;
+}
+
+.font-basic1:hover {
+    font-family: Roboto-Regular;
+    color: var(--secondary-light);
+    text-decoration: underline;
+}
+
+.font-basic2 {
+    font-family: Roboto-Regular;
+    color: var(--base-dark);
+    text-decoration: none;
 }
 
 header {
-    background-image: url("../images/creative_cv_header_bg.png");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.684), rgba(0, 0, 0, 0.514) ), url("../images/creative_cv_header_bg.png");
+    height: 480px;
+}
+
+header section.buttons #button-hire:hover {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: var(--secondary-light);
+}
+
+header section.buttons #button-download:hover {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: var(--secondary-light);  
+}
+
+header section.buttons #button-hire:active {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: blue;
+}
+
+header section.buttons #button-download:active {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+    background-color: blue;
+}
+
+.font-basic2:active {
+    font-family: Roboto-Regular;
+    color: var(--base-light);
+    text-decoration: none;
+}
+
+.font-basic1:active {
+    font-family: Roboto-Regular;
+    color: blue;
+    text-decoration: underline;
+}
+
+section img:hover {
+    margin-top: 65px;
+    height: 125px;
+    width: 125px;
+    border-radius: 10%;
 }
