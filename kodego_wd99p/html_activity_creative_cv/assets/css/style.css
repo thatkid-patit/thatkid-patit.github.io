@@ -11,7 +11,7 @@
 
 @font-face {
     font-family: roboto-medium;
-    src: url(Roboto-Medium.ttf);
+    src: url("../fonts/Roboto-Medium.ttf");
 }
 
 * {
@@ -22,7 +22,7 @@
 /* also coach, I put the (creative_cv_header_bg.png) in the same folder with the style.css. I can't pull it up from the images folder. I tried using (./images/creative_cv_header_bg.png), it didn't work. I didn't show up on the website.Thanks */
 
 .header-background {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.742), rgba(0, 0, 0, 0.607) ),url(creative_cv_header_bg.png);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.742), rgba(0, 0, 0, 0.607) ),url("../images/creative_cv_header_bg.png");
     height: 425px;
     width: 100vw;
     color: var(--primary-light);

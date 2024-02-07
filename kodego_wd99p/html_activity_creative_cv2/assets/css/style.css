@@ -1,0 +1,84 @@
+:root {
+    --primary-light: #F5F7F8;
+    --primary-dark: #495E57;
+    --secondary-light: #F4CE14;
+    --secondary-dark: #45474B;
+    --base-dark: #000000;
+    --base-light: #FFFFFF;
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+*   {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 80px;
+}
+
+#nav-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+}
+
+#nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+header>section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section img {
+    margin-top: 65px;
+    height: 125px;
+    width: 125px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+header section.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header section.buttons #button-hire {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+}
+
+header section.buttons #button-download {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 120px;
+    height: 30px;
+}
+
+.font-basic {
+    font-family: Roboto-Regular;
+    color: var(--primary-light);
+    text-decoration: none !important;
+}
+
+header {
+    background-image: url("../images/creative_cv_header_bg.png");
+}
