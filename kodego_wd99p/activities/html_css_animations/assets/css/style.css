@@ -1,0 +1,124 @@
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 250px;
+}
+
+.rotate-animation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotate-animation div section.red {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.rotate-animation div section.green {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.rotate-animation div section.blue {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.rotate-animation div section.yellow {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+.pulsate {
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 3px red;
+    animation-name: pulsate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes pulsate {
+    24% {
+        height: 250px;
+        width: 250px;
+        box-shadow: 0px 0px 50px 50px red;
+    }
+    25% {
+        height: 260px;
+        width: 260px;
+        box-shadow: 0px 0px 60px 60px green;
+    }
+    26% {
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 3px 3px green;
+    }
+    49% {
+        height: 250px;
+        width: 250px;
+        box-shadow: 0px 0px 50px 50px green;
+    }
+    50% {
+        height: 260px;
+        width: 260px;
+        box-shadow: 0px 0px 60px 60px blue;
+    }
+    51% {
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 3px 3px blue;
+    }
+    74% {
+        height: 250px;
+        width: 250px;
+        box-shadow: 0px 0px 50px 50px blue;
+    }
+    75% {
+        height: 260px;
+        width: 260px;
+        box-shadow: 0px 0px 60px 60px yellow;
+    }
+    76% {
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 3px 3px yellow;
+    }
+    99% {
+        height: 250px;
+        width: 250px;
+        box-shadow: 0px 0px 50px 50px green;
+    }
+    100% {
+        height: 260px;
+        width: 260px;
+        box-shadow: 0px 0px 60px 60px red;
+    }
+}
