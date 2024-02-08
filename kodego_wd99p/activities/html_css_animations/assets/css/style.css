@@ -58,14 +58,95 @@ body {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    box-shadow: 0px 0px 3px 3px red;
+    box-shadow: 0px 0px 1px 1px red;
+    border: 10px solid red;
     animation-name: pulsate;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
 }
 
 @keyframes pulsate {
+    12% {
+        height: 250px;
+        width: 250px;
+        box-shadow: 0px 0px 50px 50px red;
+        border: 10px solid red;
+    }
+    24% {
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 3px 3px red;
+        border: 10px solid green;
+    }
+    25% {
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 1px 1px green;
+        border: 10px solid green;
+    }
+    37% {
+        height: 250px;
+        width: 250px;
+        box-shadow: 0px 0px 50px 50px green;
+        border: 10px solid green;
+    }
+    49% {
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 3px 3px green;
+        border: 10px solid blue;
+    }
+    50% {
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 1px 1px blue;
+        border: 10px solid blue;
+    }
+    62% {
+        height: 250px;
+        width: 250px;
+        box-shadow: 0px 0px 50px 50px blue;
+        border: 10px solid blue;
+    }
+    74% {
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 3px 3px blue;
+        border: 10px solid yellow;
+    }
+    75% {
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 1px 1px yellow;
+        border: 10px solid yellow;
+    }
+    87% {
+        height: 250px;
+        width: 250px;
+        box-shadow: 0px 0px 50px 50px yellow;
+        border: 10px solid yellow;
+    }
+    99% {
+        height: 200px;
+        width: 200px;
+        box-shadow: 0px 0px 3px 3px yellow;
+        border: 10px solid red;
+    }   
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @keyframes pulsate {
     23% {
         height: 250px;
         width: 250px;
@@ -121,4 +202,4 @@ body {
         width: 260px;
         box-shadow: 0px 0px 60px 60px red;
     }
-}
+} */
