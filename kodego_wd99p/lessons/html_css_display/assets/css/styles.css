@@ -1,0 +1,113 @@
+:root {
+    --primary: #0275d8;
+    --success: #5cb85c;
+    --info: #5bc0de;
+    --warning: #f0ad4e;
+    --danger: #d9534f;
+    --inverse: #292b2c;
+    --default: #f7f7f7;
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+nav {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.div-logo {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-logo img {
+    width: 30px;
+}
+
+.div-menu {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div-menu p a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.div-menu p a:hover {
+    text-decoration: underline;
+}
+
+main {
+   
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+section div {
+    width: 90%;
+    background-color: var(--danger);
+    width: 100px;
+    height: 100px;
+    margin-bottom: 25px;
+}
+
+section div:first-child{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+
+#section-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center !important;
+    margin-bottom: 25px;
+    height: 400px !important;
+    
+}
+
+#section-info div:first-child{
+    width: 45%;
+    height: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+#section-info div:first-child img {
+    width: 100%;
+    height: 100%;
+}
+
+#section-info div:last-child{
+    width: 45%;
+    height: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+#section-info div:last-child {
+    padding-left: 25px;
+}
+
+#section-info div:last-child ul {
+    list-style: none;
+    padding: 0px;
+}
+
+input[type=button] {
+    border: 1px solid blue;
+}
