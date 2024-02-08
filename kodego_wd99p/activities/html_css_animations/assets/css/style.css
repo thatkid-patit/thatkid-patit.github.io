@@ -66,57 +66,57 @@ body {
 }
 
 @keyframes pulsate {
-    24% {
+    23% {
         height: 250px;
         width: 250px;
         box-shadow: 0px 0px 50px 50px red;
     }
-    25% {
+    24% {
         height: 260px;
         width: 260px;
         box-shadow: 0px 0px 60px 60px green;
     }
-    26% {
+    25% {
         height: 200px;
         width: 200px;
         box-shadow: 0px 0px 3px 3px green;
     }
-    49% {
+    48% {
         height: 250px;
         width: 250px;
         box-shadow: 0px 0px 50px 50px green;
     }
-    50% {
+    49% {
         height: 260px;
         width: 260px;
         box-shadow: 0px 0px 60px 60px blue;
     }
-    51% {
+    50% {
         height: 200px;
         width: 200px;
         box-shadow: 0px 0px 3px 3px blue;
     }
-    74% {
+    73% {
         height: 250px;
         width: 250px;
         box-shadow: 0px 0px 50px 50px blue;
     }
-    75% {
+    74% {
         height: 260px;
         width: 260px;
         box-shadow: 0px 0px 60px 60px yellow;
     }
-    76% {
+    75% {
         height: 200px;
         width: 200px;
         box-shadow: 0px 0px 3px 3px yellow;
     }
-    99% {
+    98% {
         height: 250px;
         width: 250px;
         box-shadow: 0px 0px 50px 50px yellow;
     }
-    100% {
+    99% {
         height: 260px;
         width: 260px;
         box-shadow: 0px 0px 60px 60px red;
