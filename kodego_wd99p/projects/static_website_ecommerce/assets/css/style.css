@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: gold;
+    height: 400px;
+    width: 100%;
+}
+
+main{
+    position: relative;
+}
+
+nav{
+    position: sticky;
+    background-color: blue;
+    height: 50px;
+    width: 100%;
+}
+
+#content-container{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 50px;
+    height: auto;
+    width: auto;
+    background-color: green;
+}
+
+#promo-voucher-container{
+    display: flex;
+    width: auto;
+}
+
+#promo-voucher-container section{
+    height: 200px;
+    width: 50%;
+    border: 1px solid black;
+    background-color: rgb(255, 136, 0);
+    margin-top: 50px;
+}
+
+#categories-container{
+    height: 500px;
+    width: auto;
+    background-color: aquamarine;
+    margin-top: 50px;
+}
+
+#electronic-instrument-slogan{
+    margin-top: 50px;
+    height: 300px;
+    width: auto;
+    background-color: blueviolet;
+}
+
+#track-order-container{
+    margin-top: 50px;
+    height: 200px;
+    width:  auto;
+    background-color: palevioletred;
+}
+
+#top-selling-products-container{
+    margin-top: 50px;
+    height: 1000px;
+    width:  auto;
+    background-color: rgb(214, 53, 163);
+}
+
+#about-help-container{
+    display: flex;
+    height: auto;
+}
+
+#about-help-container ul{
+    width: 50%;
+    height: 400px;
+    background-color: palegreen;
+
+}
