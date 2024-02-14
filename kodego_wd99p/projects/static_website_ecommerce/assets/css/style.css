@@ -1,84 +1,226 @@
+@font-face {
+    font-family: font-primary-regular;
+    src: url("../fonts/Oswald-Regular.ttf");
+}
+
+@font-face {
+    font-family: font-primary-light;
+    src: url("../fonts/Oswald-Light.ttf");
+}
+
+@font-face {
+    font-family: font-primary-bold;
+    src: url("../fonts/Oswald-Bold.ttf");
+}
+
+:root{
+    --primary-lighter: #3c6478;
+    --primary-light: #0d3d56;
+    --primary-dark: #0c374d;
+    --primary-darker: #093145;
+    --secondary-lightest: #e7e8ec;
+    --secondary-lighter: #43abc9;
+    --secondary-light: #1496bb;
+    --secondary-dark: #1287a8;
+    --secondary-darker: #107896;
+    --hover-light: #f29e21;
+    --hover-dark: #f26d21;
+}
+
 *{
     margin: 0;
     padding: 0;
+    font-family: font-primary-regular;
+    font-size: 18px;
+    color: var(--primary-darker);
+}
+
+.margin-constant{
+    margin-top: 50px;
+}
+
+.content-titles{
+    font-family: font-primary-light;
+    font-size: 30px;
+    color: var(--primary-lighter);
 }
 
 header{
-    background-color: gold;
-    height: 400px;
-    width: 100%;
+    margin: auto;
+    width: 1440px;
+    height: 500px;
+    background-image: url("../images/cover-photo.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img{
+    width: 1000px;
+    background-color: transparent;
+}
+
+main{
+    margin: auto;
+    width: 1440px;
+    height: auto;
 }
 
 nav{
-    position: -webkit-sticky;
-    position: -moz-sticky;
-    position: -ms-sticky;
-    position: -o-sticky;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     position: sticky;
     top: 0;
-    background-color: blue;
+    background-color: white;
+}
+
+nav ul{
+    display: flex;
+    gap: 30px;
+    margin: 0 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+main #logo-search-cart-container{
+    background-color: var(--hover-light);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 50px;
+}
+
+#logo-container{
+    margin-left: 30px;
+}
+
+#cart-container{
+    margin-right: 30px;
+}
+
+#logo-container img, #cart-container img, #search-container img{
     height: 50px;
+}
+
+#search-container{
+    display: flex;
+    gap: 10px;
+}
+
+#search-container input{
+    height: 50px;
+    width: 400px;
+    padding-left: 10px;
+}
+
+#monthly-promo-ads-container a img{
     width: 100%;
 }
 
-#content-container{
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 50px;
-    height: auto;
-    width: auto;
-    background-color: green;
-}
-
-#promo-voucher-container{
+#rewards-brands-vouchers-container{
     display: flex;
-    width: auto;
+    justify-content: space-evenly;
 }
 
-#promo-voucher-container section{
-    height: 200px;
-    width: 50%;
-    border: 1px solid black;
-    background-color: rgb(255, 136, 0);
-    margin-top: 50px;
-}
-
-#categories-container{
-    height: 500px;
-    width: auto;
-    background-color: aquamarine;
-    margin-top: 50px;
-}
-
-#electronic-instrument-slogan{
-    margin-top: 50px;
-    height: 300px;
-    width: auto;
-    background-color: blueviolet;
-}
-
-#track-order-container{
-    margin-top: 50px;
-    height: 200px;
-    width:  auto;
-    background-color: palevioletred;
-}
-
-#top-selling-products-container{
-    margin-top: 50px;
-    height: 1000px;
-    width:  auto;
-    background-color: rgb(214, 53, 163);
-}
-
-#about-help-container{
+#rewards-brands-vouchers-container section{
+    background-color: var(--secondary-lightest);
+    width: 33%;
+    height: 100px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#rewards-brands-vouchers-container section a{
+    text-decoration: none;
+    font-family: font-primary-light;
+    font-size: 30px;
+    color: var(--primary-darker);
+}
+
+#rewards-brands-vouchers-container section img{
+    height: 50px;
+}
+
+#category-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#category-container1 section, #category-container2 section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-lightest);
+    margin-bottom: 4px;
+}
+
+#category-container1 section img, #category-container2 section img{
+    background-color: var(--secondary-lightest);
+    width: 718px;
     height: auto;
 }
 
-#about-help-container ul{
-    width: 50%;
-    height: 400px;
-    background-color: palegreen;
+#category-container2{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
+.category-label{
+    font-family: font-primary-bold;
+    font-size: 30px;
+    color: #093145;
+}
+
+#electric-instrument-container a img{
+    width: 600px;
+    height: auto;
+}
+
+#electric-instrument-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#electric-instrument-container p{
+    font-family: font-primary-bold;
+    font-size: 50px;
+}
+
+#track-delivery-status-container{
+    display: flex;
+    background-color: var(--hover-light);
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#track-delivery-status-container input{
+    height: 50px;
+    width: 50%;
+    padding: 10px;
+}
+
+#track-delivery-status-container button{
+    height: 72px;
+    width: 15%;
+    background-color: var(--primary-darker);
+    font-size: font-primary-bold;
+    color: var(--secondary-lightest)
 }

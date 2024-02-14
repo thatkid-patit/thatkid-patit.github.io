@@ -3,67 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crescendo</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <img src="" alt="Banner" id="banner">
+        <img src="assets/images/cover-logo.png" alt="Crescendo">
     </header>
     <main>
         <nav>
-            <div>
-                
-            </div>
-            <div>
-
-            </div>
-            <div>
-
-            </div>
+           <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Track Order</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Help</a></li>
+            </ul>
         </nav>
-        <div id="content-container">
-            <div id="promo-voucher-container">
-                <section >
-                </section>
-                <section>
-                </section>
-            </div>
-            <div id="categories-container">
-                <img src="" alt="Idiophones">
-                <img src="" alt="Membranophones">
-                <img src="" alt="Chordophones">
-                <img src="" alt="Aerophones">
-            </div>
-            <div id="electronic-instrument-slogan">
-                <section>
-                </section>
-                <section>
-                </section>
-            </div>
-            <div id="track-order-container">
-            </div>
-            <div id="top-selling-products-container">
-            </div>
+        <div id="logo-search-cart-container">
+            <section id="logo-container">
+                <img src="assets/images/logo-dark.png" alt="logo">
+            </section>
+            <section id="search-container">
+                <input type="text" id="item-search" placeholder="Search an item here ...">
+                <a href=""><img src="assets/images/search-icon.png" alt="search-icon"></a>
+            </section>
+            <section id="cart-container">
+                <a href=""><img src="assets/images/shopping-cart-icon.png" alt="cart-icon"></a>
+            </section>
         </div>
-    </main>
-    <footer>
-        <div id="about-help-container">
-            <ul>
-                <li></li>
-            </ul>
-            <ul>
-                <li></li>
-            </ul>
+        <div id="monthly-promo-ads-container" class="margin-constant">
+            <a href=""><img src="assets/images/monthly-promo-banner.png" alt="monthly-promotions"></a>
         </div>
-        <div id="payment-method-container">
-            <img src="" alt="">
+        <div id="rewards-brands-vouchers-container" class="margin-constant">
+            <section>
+                <img src="assets/images/rewards-icon.png" alt="reward-icon">
+                <a href="">Rewards</a>
+            </section>
+            <section>
+                <img src="assets/images/store-icon.png" alt="brand-icon">
+                <a href="">Brands/Partners</a>
+            </section>
+            <section>
+                <img src="assets/images/voucher-icon.png" alt="voucher-icon">
+                <a href="">Vouchers</a>
+            </section>
         </div>
-        
+        <p class="margin-constant content-titles">Categories</p>
+        <div id="category-container1">
+            <section>
+                 <a href=""><img src="assets/images/category-aerophone.png" alt="category1"></a>
+                <p class="category-label">Aerophones</p>
+            </section>
+            <section>
+                <a href=""><img src="assets/images/category-membranophone.png" alt="category1"></a>
+                <p class="category-label">Membranophones</p>
+            </section>
+        </div>    
+        <div id="category-container2">
+            <section>
+                <a href=""><img src="assets/images/category-idiophone.png" alt="category1"></a>
+                <p class="category-label">Idiophones</p>
+            </section>
+            <section>
+                <a href=""><img src="assets/images/category-chordophone.png" alt="category1"></a>
+                <p class="category-label">Chordophones</p>
+            </section>
+        </div>
+        <p class="margin-constant content-titles">Electronic Instruments</p>
+        <div id="electric-instrument-container">
+            <p>"Electronic instruments are not just tools; they're portals to endless sonic exploration, where imagination knows no bounds."</p>
+            <a href=""><img src="assets/images/electric-instrument.png" alt="electric-instrument"></a>
+        </div>
+        <p class="margin-constant content-titles">Track Delivery Status</p>
+        <div id="track-delivery-status-container">
+            <input type="text" id="track-field" placeholder="Enter a valid tracking number">
+            <button id="track-delivery-button">Track</button>
+        </div>
 
-        <div>
-            
-        </div>
-    </footer>
+    </main>
 </body>
 </html>
