@@ -54,6 +54,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 header img{
@@ -224,3 +225,89 @@ main #logo-search-cart-container{
     font-size: font-primary-bold;
     color: var(--secondary-lightest)
 }
+
+#top-sells-catalogue-containera{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 330px);
+    grid-template-rows: repeat(2, 600px);
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+#top-sells-catalogue-containera a, #top-sells-catalogue-containerb a{
+    text-decoration: none;
+}
+
+#top-sells-catalogue-containerb{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 330px);
+    grid-template-rows: repeat(3, 600px);
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+#top-sells-catalogue-containera section img, #top-sells-catalogue-containerb section img{
+    width: 330px;
+    height: 330px;
+}
+
+.product-discount{
+    font-family: font-primary-bold;
+    font-size: 21px;
+    color: white;
+    height: 40px;
+    width: 100px;
+    background-color: red;
+    padding: 7px 0 0 25px;
+}
+
+.new-price{
+    font-family: font-primary-regular;
+    font-size: 30px;
+    color: var(--primary-darker);
+}
+
+.old-price{
+    font-family: font-primary-regular;
+    color: var(--primary-lighter);
+    text-decoration: line-through;
+    padding-left: 5px;
+}
+
+.product-description{
+    font-family: font-primary-regular;
+    color: var(--primary-lighter);
+    font-size: 18px;
+}
+
+#brand-partnership-ad img{
+    width: 1440px;
+}
+
+footer{
+    width: 1440px;
+    height: auto;
+    background-color: var(--primary-darker);
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 460px);
+    justify-items: center;
+    padding: 50px 0;
+}
+
+footer section ul li{
+    color: white;
+    list-style: none;
+    font-family: font-primary-light;
+    padding-top: 10px;
+}
+
+footer section p{
+    font-family: font-primary-bold;
+    font-size: 30px;
+    color: white;
+    list-style: none;
+}
+
