@@ -54,7 +54,6 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 header img{
@@ -90,6 +89,14 @@ nav ul li {
 
 nav ul li a{
     text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: var(--hover-light);
+}
+
+nav ul li a:active{
+    color: var(--hover-dark);
 }
 
 main #logo-search-cart-container{
@@ -155,6 +162,14 @@ main #logo-search-cart-container{
     height: 50px;
 }
 
+#rewards-brands-vouchers-container section:hover{
+    background-color: var(--hover-light);
+}
+
+#rewards-brands-vouchers-container section:active{
+    background-color: var(--hover-dark);
+}
+
 #category-container1{
     display: flex;
     justify-content: space-between;
@@ -167,6 +182,14 @@ main #logo-search-cart-container{
     align-items: center;
     background-color: var(--secondary-lightest);
     margin-bottom: 4px;
+}
+
+#category-container1 section:hover, #category-container2 section:hover{
+    background-color: var(--hover-light);
+}
+
+#category-container1 section:active, #category-container2 section:active{
+    background-color: var(--hover-dark);
 }
 
 #category-container1 section img, #category-container2 section img{
@@ -201,6 +224,9 @@ main #logo-search-cart-container{
 #electric-instrument-container p{
     font-family: font-primary-bold;
     font-size: 50px;
+    padding: 0 50px 0 10px;
+    text-align: right;
+    
 }
 
 #track-delivery-status-container{
@@ -223,7 +249,17 @@ main #logo-search-cart-container{
     width: 15%;
     background-color: var(--primary-darker);
     font-size: font-primary-bold;
-    color: var(--secondary-lightest)
+    color: var(--secondary-lightest);
+}
+
+#track-delivery-button:hover{
+    background-color: var(--secondary-lighter);
+    color: var(--primary-darker);
+}
+
+#track-delivery-button:active{
+    background-color: var(--secondary-darker);
+    color: var(--primary-darker);
 }
 
 #top-sells-catalogue-containera{
@@ -248,6 +284,11 @@ main #logo-search-cart-container{
     padding-top: 10px;
 }
 
+#top-sells-catalogue-containera section:hover, #top-sells-catalogue-containerb section:hover{
+    background-color: var(--secondary-lightest);
+    border-radius: 10px;
+}
+
 #top-sells-catalogue-containera section img, #top-sells-catalogue-containerb section img{
     width: 330px;
     height: 330px;
@@ -260,7 +301,9 @@ main #logo-search-cart-container{
     height: 40px;
     width: 100px;
     background-color: red;
-    padding: 7px 0 0 25px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .new-price{
@@ -289,25 +332,103 @@ main #logo-search-cart-container{
 footer{
     width: 1440px;
     height: auto;
-    background-color: var(--primary-darker);
     margin: auto;
+    padding-bottom: 50px;
+}
+
+#footer-menu-container a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+#footer-menu-container{
+    width: auto;
+    height: auto;
+    background-color: var(--primary-darker);
     display: grid;
     grid-template-columns: repeat(3, 460px);
     justify-items: center;
     padding: 50px 0;
 }
 
-footer section ul li{
+#footer-menu-container section ul li{
     color: white;
     list-style: none;
     font-family: font-primary-light;
     padding-top: 10px;
 }
 
-footer section p{
+#pm-logos{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#pm-logos img{
+    height: 50px;
+    width: auto;
+}
+
+#footer-menu-container section p{
     font-family: font-primary-bold;
     font-size: 30px;
     color: white;
     list-style: none;
 }
 
+.other-info-container{
+    background-color: var(--secondary-lightest);
+    width: 1340px;
+    margin: auto;
+    padding: 50px;
+}
+
+.title-footer{
+    font-family: font-primary-bold;
+    font-size: 30px;
+    color: var(--primary-darker);
+}
+
+.content-footer{
+    font-family: font-primary-light;
+    color: var(--primary-darker);
+    text-align: justify;
+}
+
+.content-footer a{
+    font-family: font-primary-light;
+    color: var(--primary-darker);
+    text-decoration: underline;
+}
+
+#contact-us-email, #contact-us-subject{
+    height: 50px;
+    width: 50%;
+    padding: 10px;
+}
+
+#contact-us-message{
+    height: 300px;
+    width: 50%;
+    padding: 10px;
+}
+
+#contact-us-submit{
+    height: 72px;
+    width: 15%;
+    background-color: var(--primary-darker);
+    font-size: font-primary-bold;
+    color: var(--secondary-lightest)
+}
+
+#contact-us-submit:hover{
+    background-color: var(--secondary-lighter);
+    color: var(--primary-darker);
+}
+
+#contact-us-submit:active{
+    background-color: var(--secondary-darker);
+    color: var(--primary-darker);
+}
