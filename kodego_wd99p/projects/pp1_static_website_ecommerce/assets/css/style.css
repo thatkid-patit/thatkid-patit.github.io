@@ -339,7 +339,14 @@ footer{
 #footer-menu-container a{
     color: white;
     text-decoration: none;
-    
+}
+
+#footer-menu-container a:hover, #footer-menu-container a p:hover{
+    color: var(--hover-light);
+}
+
+#footer-menu-container a:active, #footer-menu-container a p:active{
+    color: var(--hover-dark);
 }
 
 #footer-menu-container{
@@ -407,12 +414,14 @@ footer{
     height: 50px;
     width: 50%;
     padding: 10px;
+    margin: 0 25%;
 }
 
 #contact-us-message{
     height: 300px;
     width: 50%;
     padding: 10px;
+    margin: 0 25%;
 }
 
 #contact-us-submit{
@@ -420,7 +429,8 @@ footer{
     width: 15%;
     background-color: var(--primary-darker);
     font-size: font-primary-bold;
-    color: var(--secondary-lightest)
+    color: var(--secondary-lightest);
+    margin: 0 42.5%;
 }
 
 #contact-us-submit:hover{
@@ -431,4 +441,17 @@ footer{
 #contact-us-submit:active{
     background-color: var(--secondary-darker);
     color: var(--primary-darker);
+}
+
+#credits{
+    padding-top: 50px;
+    width: auto;
+    background-color: none;
+}
+
+#credits p, #credits p a{
+    text-align: center;
+    font-family: font-primary-light;
+    color: var(--primary-lighter);
+    font-size: 15px;
 }
