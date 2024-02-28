@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="https://maxst.icons8.com/vue-static/icon/favicon/icons8_fav_32×32.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Javascript Basics</title>
+</head>
+<body class="text-white">
+    <main class="container-fluid mt-4">
+        <section class="row">
+            <div class="col-md-4 "></div>
+            <div class="col-md-4 bg-dark">
+                <h2>Math Operations</h2>
+                    <div class="mb-3 mt-3">
+                        <label for="">First Number:</label>
+                        <input type="number" id="num-first-number" class="form-control form-control-sm" placeholder="Enter first number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="">Second Number:</label>
+                        <input type="number" id="num-second-number" class="form-control form-control-sm" placeholder="Enter second number">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="">Total:</label>
+                        <input type="number" id="num-total" class="form-control form-control-sm" placeholder="0.00">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <button class="btn btn-success" id="btn-add">Addition</button>
+                        <button class="btn btn-danger" id="btn-sub">Subtraction</button>
+                        <button class="btn btn-info text-white"  id="btn-mul">Multiplication</button>
+                        <button class="btn btn-warning text-white"  id="btn-div">Division</button>
+                    </div>
+            </div>
+            <div class="col-md-4"></div>
+        </section>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    // Javascript codes
+    // DOM
+
+    let btnAdd = document.getElementById("btn-add");
+
+    btnAdd.addEventListener('click', function() {
+        //string
+        let FirstNumber = document.getElementById("num-first-number").value;
+        let SecondNumber = document.getElementById("num-second-number").value;
+        let total = parseInt(FirstNumber) + parseInt(SecondNumber);
+
+        document.getElementById("num-total").value = total;
+
+        // document.getElementById("num-first-number").value = "";
+        // document.getElementById("num-second-number").value = "";
+
+        // document.getElementById("num-first-number").focus();
+        
+    });
+
+    let btnSub = document.getElementById("btn-sub");
+    btnSub.addEventListener('click', function() {
+        //string
+        let FirstNumber = document.getElementById("num-first-number").value;
+        let SecondNumber = document.getElementById("num-second-number").value;
+        let total = parseInt(FirstNumber) - parseInt(SecondNumber);
+
+        document.getElementById("num-total").value = total;
+
+        // document.getElementById("num-first-number").value = "";
+        // document.getElementById("num-second-number").value = "";
+
+        // document.getElementById("num-first-number").focus();
+        
+    });
+
+    let btnMul = document.getElementById("btn-mul");
+    btnMul.addEventListener('click', function() {
+        //string
+        let FirstNumber = document.getElementById("num-first-number").value;
+        let SecondNumber = document.getElementById("num-second-number").value;
+
+        let total = parseInt(FirstNumber) * parseInt(SecondNumber);
+
+        document.getElementById("num-total").value = total;
+
+        // document.getElementById("num-first-number").value = "";
+        // document.getElementById("num-second-number").value = "";
+
+        // document.getElementById("num-first-number").focus();
+        
+    });
+
+    let btnDiv = document.getElementById("btn-div");
+    btnDiv.addEventListener('click', function() {
+        //string
+        let UnangNumber = document.getElementById("num-first-number");
+        let FirstNumber = UnangNumber.value;
+        let SecondNumber = document.getElementById("num-second-number").value;
+
+        let total = parseInt(FirstNumber) / parseInt(SecondNumber);
+
+        document.getElementById("num-total").value = total;
+
+        UnangNumber.value = "";
+        // document.getElementById("num-second-number").value = "";
+
+        // document.getElementById("num-first-number").focus();
+        
+    });
+
+
+
+
+    // VARIABLES
+    //TYPE NAME = VALUE
+    // let AvailableLollipops = 10;
+    // var MinimumLollipopToSold = 2;
+
+    // AvailableLollipops = 14;
+
+    // const RemainingLollipops = 10;
+    
+    // var - can redeclare and can reassign
+    // let - cannot redeclare but can reassign
+    // const - cannot redeclare and cannot reassign
+
+    // RemainingLollipops = AvailableLollipops + MinimumLollipopToSold;
+
+    // console.log(RemainingLollipops);
+
+</script>
