@@ -8,6 +8,57 @@ a, li, p, h1, h2, h3, h4, h5{
 *{
     scroll-behavior: smooth;
 }
+.text-warning2{
+    color: rgba(255, 177, 0, 1) !important;
+}
 .progress{
     height: 5px;
+}
+.min-height{
+    min-height: 400px;
+}
+.max-height{
+    max-height: 1000px;
+}
+.padding-top{
+    padding-top: 100px;
+}
+.padding-top-nav{
+    padding-top: 150px;
+}
+.padding-bot{
+    padding-bottom: 100px;
+}
+.padding-bot2{
+    padding-bottom: 50px;
+}
+.padding-lr{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.footer-fontsize{
+    font-size: 12px;
+}
+.padding-top-sm{
+    padding-top: 24px
+}
+.padding-bot-sm{
+    padding-bottom: 24px
+}
+@media (max-width: 991px) and (min-width: 576px){
+    #navbarSupportedContent ul{
+        align-items: end;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 575px){
+    #navbarSupportedContent ul{
+        align-items: center;
+    }
+    #contact-info, #contact-form{
+        margin-bottom: 50px;
+    }
+    #contact-form button{
+        justify-items: center;
+    }
 }
