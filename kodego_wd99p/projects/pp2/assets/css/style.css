@@ -8,8 +8,11 @@ a, li, p, h1, h2, h3, h4, h5{
 *{
     scroll-behavior: smooth;
 }
+.shadow-slight{
+    box-shadow: 1px 1px 5px gray !important;
+}
 .text-warning2{
-    color: rgba(255, 177, 0, 1) !important;
+    color: rgb(255, 140, 0);
 }
 .progress{
     height: 5px;
@@ -44,6 +47,9 @@ a, li, p, h1, h2, h3, h4, h5{
 }
 .padding-bot-sm{
     padding-bottom: 24px
+}
+.shadow-hover:hover{
+    box-shadow: 1px 1px 5px gray !important;
 }
 @media (max-width: 991px) and (min-width: 576px){
     #navbarSupportedContent ul{
