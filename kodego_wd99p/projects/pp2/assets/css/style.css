@@ -110,7 +110,7 @@ a, li, p, h1, h2, h3, h4, h5{
 /* skills animation end */
 
 /* respnsive properties start*/
-@media (max-width: 991px) and (min-width: 576px){
+@media (max-width: 991px) and (min-width: 576px) {
     #navbarSupportedContent ul{
         align-items: end;
         margin-top: 20px;
