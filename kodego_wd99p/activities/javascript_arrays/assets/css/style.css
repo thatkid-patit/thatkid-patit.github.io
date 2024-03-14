@@ -1,0 +1,40 @@
+:root{
+    --c-hard: #413c58;
+    --c-normal: #a682ff;
+    --c-easy: #cdcdcd;
+    --c-insane: #c33149;
+*{
+    box-sizing: border-box;
+}
+}
+.bg-hard{
+    background-color: var(--c-hard);
+}
+.bg-normal{
+    background-color: var(--c-normal);
+}
+.bg-easy{
+    background-color: var(--c-easy);
+}
+.bg-insane{
+    background-color: var(--c-insane);
+}
+.bg-insane2{
+    background-color: var(--c-insane);
+}
+button.bg-hard:hover{
+    background-color: var(--c-insane);
+}
+button.bg-insane2:hover{
+    background-color: var(--c-normal);
+}
+.bg-white{  
+    background-color: white;
+}
+.max-height{
+   height: 220px;
+   max-height: 220px;
+}
+.hidden{
+    display: ;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://maxst.icons8.com/vue-static/icon/favicon/icons8_fav_32×32.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Javascript Arrays</title>
+</head>
+<body>
+    <main class="container mt-4">
+        <section class="row">
+            <div class="col-md-3 bg-primary text-white p-5">
+                <h4>Item Entry</h4>
+                <div class="mb-3 mt-3">
+                    <label for="">Item</label>
+                    <input id="txtItem" type="text" class="form-control form-control-sm">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="">Amount</label>
+                    <input id="txtAmount" type="number" class="form-control form-control-sm">
+                </div>
+                <div class="mb-3 mt-3">
+                    <button class="btn btn-danger" id="btn-add"> Add Item </button>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-6 bg-secondary text-white p-5 overflow-auto" style="max-height: 300px;">
+                <h5>List of Items</h5>
+                <ul id="ul-list"></ul>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- <script src="assets/js/scripts.js"></script> -->
+    <script src="assets/js/array.js"></script>
+</body>
+</html>
