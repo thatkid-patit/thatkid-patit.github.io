@@ -42,9 +42,8 @@ function removeCredentials(index) {
 
 function editCredentials(index) {
     [emId,emNm,emHrs] = [credentials[index][0],credentials[index][1],credentials[index][2]];
-    // document.getElementById("em-id").value = emId;
-    // document.getElementById("em-nm").value = emNm;
-    // document.getElementById("em-hrs").value = emHrs;
-    document.getElementById("btn-log").innerTEXT = "Update Hours";
-    // credentials.splice(index,1);
+    document.getElementById("em-id").value = emId;
+    document.getElementById("em-nm").value = emNm;
+    document.getElementById("em-hrs").value = emHrs;
+    credentials.splice(index,1);
 }
