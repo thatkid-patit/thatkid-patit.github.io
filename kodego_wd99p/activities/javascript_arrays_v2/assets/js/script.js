@@ -11,10 +11,10 @@ document.getElementById("btn-log").addEventListener('click',function() {
     }else if(emHrs == "") {
         alert("Please enter a valid man-hour!");
     }else{
-        credentials.push([emId,emNm,emHrs]);
+        credentials.unshift([emId,emNm,emHrs]);
         printCredentials();
         clearFields();
-        computeTotalManHrs();
+        document.getElementById("btn-log").innerTEXT = "Log Hours";
     }
 })
 
@@ -38,15 +38,13 @@ function clearFields() {
 function removeCredentials(index) {
     credentials.splice(index,1);
     printCredentials();
-    computeTotalManHrs();
  }
 
- function editCredentials(index) {
+function editCredentials(index) {
     [emId,emNm,emHrs] = [credentials[index][0],credentials[index][1],credentials[index][2]];
-    document.getElementById("em-id").value = emId;
-    document.getElementById("em-nm").value = emNm;
-    document.getElementById("em-hrs").value = emHrs;
-    removeCredentials(index);
-    printCredentials();
-    computeTotalManHrs();
- }
+    // document.getElementById("em-id").value = emId;
+    // document.getElementById("em-nm").value = emNm;
+    // document.getElementById("em-hrs").value = emHrs;
+    document.getElementById("btn-log").innerTEXT = "Update Hours";
+    // credentials.splice(index,1);
+}
