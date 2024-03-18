@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+    <link rel="shortcut icon" href="assets/images/developer_logo_bgblack.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar text-bg-dark fixed-top shadow-sm">
+            <div class="container">
+              <span class="navbar-brand mb-0 h1 text-white">JS Activity: Objects</span>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="container">
+            <div class="row mt-5 py-5 g-5 justify-content-center">
+                <div class="col-12 col-md-4 col-xl-3 text-bg-secondary rounded-4 p-5 max-height-530 border border-secondary">
+                    <div class="mb-3">
+                        <h5>Items</h5>
+                        <input id="item-details-index" class="form-control d-none">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input-sku" class="form-label">SKU</label>
+                        <input type="number" class="form-control" id="input-sku" placeholder="Enter the item SKU number">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input-name" class="form-label">Item Name</label>
+                        <input type="text" class="form-control" id="input-name" placeholder="Enter the item name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input-image" class="form-label">Item Photo</label>
+                        <input type="url" class="form-control" id="input-image" placeholder="Enter the item image link">
+                    </div>
+                    <div class="mb-3">
+                        <label for="input-price" class="form-label">Item Price</label>
+                        <input type="number" class="form-control" id="input-price" placeholder="Enter the item price">
+                    </div>
+                    <div class="mb-3" id="add-modify-btn">
+                        <button type="button" class="btn btn-info mb-3" id="add-btn"  onclick="newItem();">Add Item</button>
+                    </div>
+                </div>
+                <div class="col-auto"></div>
+                <div id="added-items-section" class="col-12 col-md-6 col-xl-7 d-flex flex-wrap align-content-start justify-content-start overflow-auto text-bg-secondary rounded-4 p-5 max-height-530 border border-secondary">
+                    <!-- <div class="card mx-auto mb-2" style="max-width: 18rem; min-width: 18rem; height: max-content;">
+                        <img id="item-image" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/503351/2024805/restricted" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 id="item-name" class="card-title">Item name</h5>
+                            <p id="item-price" class="card-text">Item: Price</p>
+                            <div >
+                                <a id="cart-btn" href="#" class="btn btn-success">Cart</a>
+                                <a id="modify-btn" href="#" class="btn btn-warning">Modify</a>
+                                <a id="remove-btn" href="#" class="btn btn-danger">Remove</a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-secondary text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Photo</th>
+                                <th scope="col">SKU</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Total Amount</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items-section">
+                            <!-- <tr id="td-row">
+                                <td id="td-count">1</td>
+                                <td id="td-image"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/503351/2024805/restricted" class="rounded-circle" style="height: 40px; width: 40px;" alt=""></td>
+                                <td id="td-sku">sku</td>
+                                <td id="td-name">name</td>
+                                <td id="td-price">amnt</td>
+                                <td id="td-quantity">qty</td>
+                                <td id="td-total">Total</td>
+                                <td><button id="minus-btn" type="button" class="btn btn-danger mx-1">Minus</button><button id="plus-btn" type="button" class="btn btn-warning mx-1">Plus</button></td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

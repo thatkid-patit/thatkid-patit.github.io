@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="fs-3">
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Shopping Cart</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mt-5">
+      <section class="row">
+        <input type="text" class="form-control" id="txtIndex" />
+        <div class="col-md-4 bg-info p-3">
+          <h3>Items</h3>
+          <div class="row mt-2">
+            <div class="col-md-12">
+              <label for="txtSku">S.K.U. #</label>
+              <input type="text" class="form-control" id="txtSku" />
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-md-12">
+              <label for="txtItemName">Item Name</label>
+              <input type="text" class="form-control" id="txtItemName" />
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-md-12">
+              <label for="txtItemPhoto">Item Photo</label>
+              <textarea
+                id="txtItemPhoto"
+                class="form-control"
+                cols="10"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-md-12">
+              <label for="txtItemPrice">Item Price</label>
+              <input type="number" class="form-control" id="txtItemPrice" />
+            </div>
+          </div>
+          <div class="row g-3 mt-2">
+            <div class="col-md-12">
+              <button class="btn btn-primary" id="btnAddItem">Add Item</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+        <div
+          class="col-md-7 bg-primary overflow-auto p-2"
+          style="max-height: 600px"
+        >
+          <div class="row" id="div-cards"></div>
+        </div>
+      </section>
+
+      <section class="row mt-5">
+        <div
+          class="col-md-12 bg-light bg-gradient table-responsive overflow-auto"
+          style="max-height: 400px"
+        >
+          <table class="table table-hover table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Photo</th>
+                <th>S.K.U. #</th>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Quantity</th>
+                <th>Total Price</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
