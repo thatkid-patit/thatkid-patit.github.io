@@ -1,0 +1,11 @@
+.mh-vh{
+    min-height: 80vh;
+}
+.x-active{
+    color: black !important;
+    background-color: #ffc107 !important;
+    border-color: #ffc107 !important;
+}
+.head{
+    color: #ffc107 !important;
+}
