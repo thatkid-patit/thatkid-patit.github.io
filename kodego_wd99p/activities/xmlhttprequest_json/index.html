@@ -15,18 +15,13 @@
         <nav class="navbar bg-dark border-bottom border-body">
             <div class="container">
                 <a class="navbar-brand"><span class="text-white">Activity:</span><span class="text-warning"> XMLhttprequest-JSON</span></a>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="nav-item dropdown btn btn-outline-warning">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Search
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">By First Name</a></li>
-                            <li><a class="dropdown-item" href="#">By Last Name</a></li>
-                        </ul>
-                    </button>
-                </form>
+                <section class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searh-bar" onkeyup="filter();">
+                    <select class="form-select form-select-sm bg-warning" aria-label="Small select example" id="search-filter">
+                        <option value=1>Search by First Name</option>
+                        <option value=2>Search by Last Name</option>
+                      </select>
+                </section>
             </div>
         </nav>
     </header>
@@ -52,12 +47,12 @@
 
         </section>
         <section id="page-nav" class="mt-3">
-            <!-- <ul class="pagination pagination-sm justify-content-center">
-                <li class="page-item"><a class="page-link x-active bg-dark border-warning text-warning" href="#" onclick="pgSel(1);">1</a></li>
-                <li class="page-item"><a class="page-link bg-dark border-warning text-white" href="#" onclick="pgSel(2);">2</a></li>
-                <li class="page-item"><a class="page-link bg-dark border-warning text-white" href="#" onclick="pgSel(3);">3</a></li>
-                <li class="page-item"><a class="page-link bg-dark border-warning text-white" href="#" onclick="pgSel(4);">4</a></li>
-            </ul> -->
+            <ul class="pagination pagination-sm justify-content-center">
+                <li class="page-item"><a id="page-1" class="page-link bg-dark border-warning text-white" href="#" onclick="pgSel(1);">1</a></li>
+                <li class="page-item"><a id="page-2" class="page-link bg-dark border-warning text-white" href="#" onclick="pgSel(2);">2</a></li>
+                <li class="page-item"><a id="page-3" class="page-link bg-dark border-warning text-white" href="#" onclick="pgSel(3);">3</a></li>
+                <li class="page-item"><a id="page-4" class="page-link bg-dark border-warning text-white" href="#" onclick="pgSel(4);">4</a></li>
+            </ul>
         </section>
     </main>
 </body>
