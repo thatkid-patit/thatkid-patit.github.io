@@ -2,7 +2,8 @@ let xhr = new XMLHttpRequest;
 xhr.onreadystatechange = function() {
     if(xhr.readyState == 4) {
         if(xhr.status == 200) {
-            displayTable(JSON.parse(xhr.responseText));
+            jsonData = JSON.parse(xhr.responseText).data;
+            displayTable(jsonData);
         }else{
             alert("Failed to get 200 Ok!")
         }
@@ -12,17 +13,17 @@ pgSel(0);
 
 function displayTable(tData) {
     let table = "";
-    for(const rData in tData.data) {
+    for(const rData in tData) {
         table += `
             <tr>
-                <th class="head">${tData.data[rData].id}</th>
-                <td>${tData.data[rData].title}</td>
-                <td>${tData.data[rData].firstname}</td>
-                <td>${tData.data[rData].lastname}</td>
-                <td>${tData.data[rData].practice_name}</td>
-                <td>${tData.data[rData].provider_specialty}</td>
-                <td>${tData.data[rData].contact_number}</td>
-                <td>${tData.data[rData].email}</td>
+                <th class="head">${tData[rData].id}</th>
+                <td>${tData[rData].title}</td>
+                <td>${tData[rData].firstname}</td>
+                <td>${tData[rData].lastname}</td>
+                <td>${tData[rData].practice_name}</td>
+                <td>${tData[rData].provider_specialty}</td>
+                <td>${tData[rData].contact_number}</td>
+                <td>${tData[rData].email}</td>
             </tr>
         `;
     }
@@ -57,18 +58,84 @@ function pgSel(pgNum) {
     }
 }
 
-function filter() {
-    // searchFilter = document.getElementById("#search-bar").value;
-    console.log("hello");
-}
+let selectFilter = document.querySelector("#search-filter");
+selectFilter.addEventListener('change', function () {
+    filterReady = selectFilter.value;
+    document.querySelector("#filter-output").value = filterReady;
+    document.querySelector("#search-bar").value = "Search";
+    document.querySelector("#search-bar").focus();
+})
 
-// function filter() {
-//     // let searchFilter = document.querySelector("#search-bar").value;
-//     // if(document.getElementById("search-filter").value = 1) {
-//     //     jsonData = JSON.parse(xhr.responseText).data.filter(function (fname) {
-//     //         return fname.firstname.toLowerCase().includes(searchFilter.toLowerCase());
-//     //     })
-//     // }
-//     console.log(searchFilter);
+let typeKeyword = document.querySelector("#search-bar");
+typeKeyword.addEventListener('keyup', function() {
+    keyWordOutput = typeKeyword.value;
+    if(document.querySelector("#filter-output").value == 0) {
+        jsonData = JSON.parse(xhr.responseText).data;
+    }else if(document.querySelector("#filter-output").value == 1) {
+        jsonData = JSON.parse(xhr.responseText).data.filter(function (fname) {
+            return fname.firstname.toLowerCase().includes(keyWordOutput.toLowerCase());
+        });
+    }else if(document.querySelector("#filter-output").value == 2) {
+        jsonData = JSON.parse(xhr.responseText).data.filter(function (lname) {
+            return lname.lastname.toLowerCase().includes(keyWordOutput.toLowerCase());
+        });
+    }
+    displayTable(jsonData);
+})
+
+
+
+
+// let searchFilter = document.querySelector("#search-bar");
+// searchFilter.addEventListener('keyup', function() {
+//     searchKeyWord = searchFilter.value;
+//     if()
+    
+// })
+
+// let searchFilter = document.querySelector("#search-bar");
+// searchFilter.addEventListener('keyup',function() {
+//     let filterOutput = document.querySelector("#search-filter").value;
+//     if(filterOutput = 0) {
+//         jsonData = JSON.parse(xhr.responseText).data;
+//     }else if(filterOutput = 1) {
+//         jsonData = JSON.parse(xhr.responseText).data.filter(function (fname) {
+//             return fname.firstname.toLowerCase().includes(searchFilter.value.toLowerCase());
+//         })
+//     }else if(filterOutput = 2) {
+//         jsonData = JSON.parse(xhr.responseText).data.filter(function (lname) {
+//             return lname.lastname.toLowerCase().includes(searchFilter.value.toLowerCase());
+//         })
+//     }
+//     displayTable(jsonData);
+// })
+
+// let filterOutput = document.querySelector("#search-filter").value;
+// let searchFilter = document.querySelector("#search-bar");
+// if(filterOutput = 1) {
+//     searchFilter.addEventListener('keyup',function() {
+//         console.log(filterOutput);
+//         // jsonData = JSON.parse(xhr.responseText).data.filter(function (fname) {
+//         //     return fname.firstname.toLowerCase().includes(searchFilter.value.toLowerCase());
+//         // })
+//         // displayTable(jsonData);
+//     })   
 // }
 
+// if(filterOutput = 2) {
+//     searchFilter.addEventListener('keyup',function() {
+//         console.log(filterOutput);
+//         // jsonData = JSON.parse(xhr.responseText).data.filter(function (lname) {
+//         //     return lname.lastname.toLowerCase().includes(searchFilter.value.toLowerCase());
+//         // })
+//         // displayTable(jsonData);
+//     })
+// }
+
+// if(filterOutput = 0) {
+//     searchFilter.addEventListener('keyup',function() {
+//         console.log(filterOutput);
+//         // jsonData = JSON.parse(xhr.responseText).data;
+//         // displayTable(jsonData);
+//     })
+// }

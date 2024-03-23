@@ -16,11 +16,13 @@
             <div class="container">
                 <a class="navbar-brand"><span class="text-white">Activity:</span><span class="text-warning"> XMLhttprequest-JSON</span></a>
                 <section class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searh-bar" onkeyup="filter();">
-                    <select class="form-select form-select-sm bg-warning" aria-label="Small select example" id="search-filter">
-                        <option value=1>Search by First Name</option>
-                        <option value=2>Search by Last Name</option>
-                      </select>
+                    <input class="form-control me-2" type="search" placeholder="Search" id="search-bar">
+                    <input class="form-control d-none" type="search" placeholder="Search" id="filter-output" value=0>
+                    <select class="form-select form-select-sm bg-warning" id="search-filter">
+                        <option value=0 selected>Search by:</option>
+                        <option value=1>First Name</option>
+                        <option value=2>Last Name</option>
+                    </select>
                 </section>
             </div>
         </nav>
