@@ -11,7 +11,7 @@ function sortNum(b,a) {
     if(input % 2 == 0) {
         b.unshift(input);
     }else if(input % 2 == 1) {
-        a.unshift(input)
+        a.unshift(input);
     }
     sortNum(b,a);
 };
