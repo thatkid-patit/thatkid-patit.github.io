@@ -1,0 +1,251 @@
+@font-face {
+    font-family: replay;
+    src: url("../fonts/BPreplayExtended.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: replay, sans-serif, Georgia, 'Times New Roman';
+}
+
+body {
+    background-color: #ebebeb;
+    display: flex;
+}
+
+#left {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#left .logo {
+    padding: 40px 0 0 40px;
+}
+
+#left .logo img {
+    height: 50px;
+}
+
+#left .side-items {
+    margin-top: 40px;
+}
+
+#left .side-items li {
+    list-style: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#left .side-items li:hover {
+    background-color: #00000021;
+}
+
+#left .side-items li i {
+    line-height: 80px;
+    font-size: 20px;
+    margin: 0 20px 0 40px;
+    text-align: center;
+}
+
+#left .side-items li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#right {
+    width: calc(100% - 300px);
+    background-color: #ebebeb;
+    margin: 0 0 0 300px;
+    position: relative;
+}
+
+
+#right nav {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #ebebeb;
+    position: fixed;
+    width: calc(100% - 300px);
+}
+
+#side-toggler {
+    display: none;
+    font-size: 50px;
+    cursor: pointer;
+    margin: 0 40px 0 0;
+}
+
+#right nav .burg {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#right nav .search {
+    border: 3px solid gray;
+    border-radius: 10px;
+    height: 50px;
+    width: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+
+#right nav .search i {
+    color: gray;
+    font-size: 30px;
+    margin: 0 10px 0 0;
+}
+
+#right nav .search input {
+    font-size: 20px;
+    color: gray;
+    border: none;
+    outline: none;
+}
+
+#right nav .user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#right nav .user i {
+    font-size: 50px;
+    color: gray;
+    margin: 0 100px 0 20px;
+}
+
+#right nav .user div {
+    margin: 0 20px 0 0;
+}
+
+#right nav .user div p {
+    color: gray;
+    font-size: 12px;
+    text-align: end;
+}
+
+#right nav .user div h5 {
+    color: black;
+    font-size: 18px;
+    text-align: end;
+    
+}
+
+#right nav .user img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+#right main {
+    margin-top: 90px;
+}
+/* dashboard starts here */
+#dash-cards {
+    padding: 40px 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#dash-cards .card {
+    background-color: white;
+    width: 350px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px 10px 10px;
+    flex-grow: 1;
+}
+
+#dash-cards .card i {
+    font-size: 80px;
+    margin: 0 20px 0 0;
+}
+
+#dash-cards .card h3 {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600px;
+}
+
+#dash-cards .card h5 {
+    font-size: 15px;
+    color: gray;
+}
+
+#dash-graphs {
+    padding: 40px 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#dash-graphs .graph {
+    background-color: white;
+    width: 740px;
+    height: 700px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: auto;
+    margin: 0 10px 10px 10px;
+    flex-grow: 1;
+}
+/* media query starts here*/
+@media (max-width: 769px) {
+    #left {
+        width: 280px;
+        position: fixed;
+        left: -280px;
+    }
+    #right {
+        width: 100%;
+        margin-left: 0;
+        display: inline-block;
+    }
+    #right nav {
+        width: 100%;
+    }
+    #side-toggler {
+        display: initial;
+    }
+}
+
+/* theme and effect configuration start here*/
+.active {
+    border-left: 5px solid white;
+    background-color: #00000015;
+}
+
+.bg-a {
+    background-color: #006e8c;
+}
+
+.ic-a {
+    background-color: none;
+    color: #006e8c;
+}
+
+.fc-a {
+    background-color: none;
+    color: #ebebeb;
+}
+

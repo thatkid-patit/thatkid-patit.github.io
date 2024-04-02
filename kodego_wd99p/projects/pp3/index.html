@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodeGo PP3 | CRM</title>
+    <link rel="shortcut icon" href="assets/images/developer_logo_bgblack.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <aside id="left" class="bg-a">
+        <div class="logo">
+            <img src="assets/images/nexus360 _logo_white_bg_none.png" alt="">
+        </div>
+        <ul class="side-items">
+            <li class="active"><i class='bx bxs-dashboard fc-a'></i><a class="fc-a" href="#dashboard">Dashboard</a></li>
+            <li><i class='bx bxs-report fc-a'></i><a class="fc-a" href="#reports">Reports</a></li>
+            <li><i class='bx bxs-server fc-a'></i><a class="fc-a" href="#deals">Deals Status</a></li>
+            <li><i class='bx bxs-phone-outgoing fc-a'></i><a class="fc-a" href="#callbacks">Scheduled Calls</a></li>
+            <li><i class='bx bxs-bank fc-a'></i><a class="fc-a" href="#leads">Leads Bank</a></li>
+            <li><i class='bx bxs-collection fc-a'></i><a class="fc-a" href="#products">My Products</a></li>
+            <li><i class='bx bxs-group fc-a'></i><a class="fc-a" href="#team">My Team</a></li>
+        </ul>
+    </aside>
+    <aside id="right">
+        <nav>
+            <section class="burg">
+                <div>
+                    <i id="side-toggler" class='bx bx-menu ic-a'></i>
+                </div>
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+            </section>
+            <section class="user" id="user-menu">
+                <i class='bx bxs-bell'></i>
+                <div>
+                    <p>Hey</p>
+                    <h5>Patrick</h5>
+                </div>
+                <img src="assets/images/sample_user.jfif" alt="User">
+            </section>
+        </nav>
+        <main id="content-area">
+            <section id="dash-cards">
+                <div class='card'>
+                    <i class='bx bx-money ic-a'></i>
+                    <div>
+                        <h3>$9,999</h3>
+                        <h5>This Month</h5>
+                    </div>
+                </div>
+                <div class='card'>
+                    <i class='bx bx-category ic-a'></i>
+                    <div>
+                        <h3>9,999</h3>
+                        <h5>Products Sold</h5>
+                    </div>
+                </div>
+                <div class='card'>
+                    <i class='bx bxs-truck ic-a'></i>
+                    <div>
+                        <h3>9,999</h3>
+                        <h5>In-transit</h5>
+                    </div>
+                </div>
+                <div class='card'>
+                    <i class='bx bx-library ic-a'></i>
+                    <div>
+                        <h3>9,999</h3>
+                        <h5>Cold Leads</h5>
+                    </div>
+                </div>
+            </section>
+            <section id='dash-graphs'>
+                <div class='graph'>
+                    <div id='sales-graph'>
+                    </div>
+                    <h3>Sales Trend</h3>
+                </div>
+                <div class='graph'>
+                    <div id='product-graph'>
+                    </div>
+                    <h3>Top Selling Product</h3>
+                </div>
+                
+            </section>
+
+               <!-- <section id='card-group-a'>
+                    <div class='card'>
+                        <i class='bx bxs-star ic-a'></i>
+                        <div id='dashboard-deliver'>
+                            <h5>9,999</h5>
+                            <p>Successful Deals</p>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <i class='bx bxs-truck ic-a'></i>
+                        <div id='dashboard-inTransit'>
+                            <h5>999</h5>
+                            <p>Pending Deals</p>
+                        </div>
+                    </div>
+                    <div class='card'>
+                        <i class='bx bxs-doughnut-chart ic-a'></i>
+                        <div id='dashboard-bestSelling'>
+                            <h5>100mbps BF</h5>
+                            <p>Best Selling</p>
+                        </div>
+                    </div>
+                </section>
+                <section id='card-group-b'>
+                    <div class='graph-card'>
+                        <div id='dashboard-graph'>
+                            GRAPH
+                        </div>
+                        <h5>WTD Sales Trend</h5>
+                    </div>
+                    <section id='card-group-b-sub'>
+                        <div class='card'>
+                            <i class='bx bxs-user ic-a'></i>
+                            <div id='dashboard-admin'>
+                                <h5>9</h5>
+                                <p>Admins</p>
+                            </div>
+                        </div>
+                        <div class='card'>
+                            <i class='bx bxs-user-account ic-a'></i>
+                            <div id='dashboard-member'>
+                                <h5>99</h5>
+                                <p>Members</p>
+                            </div>
+                        </div>
+                    </section>
+                </section> -->
+
+                <!-- <div class='dashboard-card-a'>
+                    <i class='bx bxs-star'></i>
+                    <div class='dashboard-card-data'>
+                        <h5>9,999</h5>
+                        <p>Successful Deals</p>
+                    </div>
+                </div>
+                <div class='dashboard-card-a'>
+                    <i class='bx bxs-truck'></i>
+                    <div class='dashboard-card-data'>
+                        <h5>99</h5>
+                        <p>Pending Deals</p>
+                    </div>
+                </div>
+                <div class='dashboard-card-b'>
+                    <i class='bx bxs-star'></i>
+                    <div class='dashboard-card-data'>
+                        <h5>100mbps BF</h5>
+                        <p>Top Selling Item</p>
+                    </div>
+                </div>
+                <div class='dashboard-card-c'>
+                    <i class='bx bxs-table'></i>
+                    <div class='dashboard-card-data'>
+                        <h5>Week to Date Sales Trend</h5>
+                    </div>
+                </div>
+                <section class='dashboard-subcard-container'>
+                    <div class='dashboard-card-a'>
+                        <i class='bx bxs-user'></i>
+                        <div class='dashboard-card-data'>
+                            <h5>99</h5>
+                            <p>Admins</p>
+                        </div>
+                    </div>
+                    <div class='dashboard-card-a'>
+                        <i class='bx bxs-user-account'></i>
+                        <div class='dashboard-card-data'>
+                            <h5>999</h5>
+                            <p>Members</p>
+                        </div>
+                    </div>
+                </section> -->
+            <!-- <section id='dashboard-recent-container'>
+                <ul>
+                    <li><b>Juan Dela Cruz</b> added <b>Markus Magsino</b> as a new admin of the team.</li>
+                    <li><b>Juan Dela Cruz</b> changed the deal status with <b>Maria Makiling</b> to in-transit.</li>
+                    <li><b>Juan Dela Cruz</b> changed the deal status with <b>Maria Makiling</b> to cancelled.</li>
+                    <li><b>Juan Dela Cruz</b> changed the deal status with <b>Maria Makiling</b> to delivered.</li>
+                    <li><b>Juan Dela Cruz</b> added <b>Markus Magsino</b> as a new member of the team.</li>
+                </ul>
+            </section> -->
+
+        </main>
+    </aside>
+    
+</body>
+</html>
