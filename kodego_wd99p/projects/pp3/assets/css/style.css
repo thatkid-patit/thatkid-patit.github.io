@@ -146,7 +146,7 @@ body {
 }
 
 #right main {
-    margin-top: 100px;
+    margin-top: 100px; 
 }
 /* dashboard starts here */
 #dash-cards {
@@ -155,6 +155,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    animation: loadPage 0.75s;
 }
 
 #dash-cards .card {
@@ -192,6 +193,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    animation: loadPage 0.75s;
 }
 
 #dash-graphs .graph {
@@ -215,6 +217,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    animation: loadPage 0.75s;
 }
 
 .report-config-container select {
@@ -255,6 +258,7 @@ body {
 /* deals status starts here */
 #deals-status-container {
     padding: 40px 40px 0 40px;
+    animation: loadPage 0.75s;
 }
 /* my products starts here */
 .form-btn-container {
@@ -262,6 +266,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    animation: loadPage 0.75s;
 }
 
 .form-btn-container div {
@@ -304,6 +309,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    animation: loadPage 0.75s;
 }
 
 .product-container .card {
@@ -369,6 +375,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    animation: loadPage 0.75s;
 }
 
 .teammate-container .card {
@@ -430,6 +437,7 @@ body {
 /* table style starts here */
 .table {
     padding: 40px 40px 0 40px;
+    animation: loadPage 0.75s;
 }
 
 .table table {
@@ -543,13 +551,16 @@ body {
     background-color: rgba(128, 128, 128, 0.84);
 }
 
-
-
-
-
-
-
-
+@keyframes loadPage {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
 /* media query starts here*/
 @media (max-width: 1025px) {
     #left {
