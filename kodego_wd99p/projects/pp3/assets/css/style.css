@@ -317,12 +317,14 @@ body {
     flex-direction: column;
     width: 300px;
     border-radius: 10px;
-    margin: 0 20px 20px 0;
+    margin: 0 20px 60px 0;
     background-color: white;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1);
+    cursor: pointer;
 }
 
-.product-container .card .prod-categ {
+.product-container .card .prod-categ,
+.product-container .card .prod-price {
     height: 50px;
     color: black;
     text-align: center;
@@ -355,6 +357,8 @@ body {
     align-items: center;
     justify-content: flex-end;
     padding: 0 10px 0 0;
+    background-color: rgb(209, 204, 204);
+    border-radius: 0 0 10px 10px;
 }
 
 .product-container .card .prod-config li {
@@ -368,6 +372,13 @@ body {
     font-size: 14px;
     color: black;
 }
+
+.product-container .card:hover .prod-config,
+.product-container .card:hover .prod-config li a {
+    color: white;
+    background-color: rgb(80, 79, 79);
+    font-size: 14px;
+}   
 /* my team starts here */
 .teammate-container {
     padding: 40px 40px 0 40px;
@@ -383,9 +394,10 @@ body {
     flex-direction: column;
     width: 300px;
     border-radius: 10px;
-    margin: 0 20px 20px 0;
+    margin: 0 20px 60px 0;
     background-color: white;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1);
+    cursor: pointer;
 }
 
 .teammate-container .card .teammate-categ {
@@ -412,7 +424,7 @@ body {
 .teammate-container .card:hover .teammate-name{
     color: black;
     background-color: white;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .teammate-container .card .teammate-config {
@@ -421,6 +433,8 @@ body {
     align-items: center;
     justify-content: flex-end;
     padding: 0 10px 0 0;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(209, 204, 204);
 }
 
 .teammate-container .card .teammate-config li {
@@ -433,6 +447,13 @@ body {
     text-decoration: none;
     font-size: 14px;
     color: black;
+}
+
+.teammate-container .card:hover .teammate-config,
+.teammate-container .card:hover .teammate-config li a {
+    color: white;
+    background-color: rgb(80, 79, 79);
+    font-size: 14px;
 }
 /* table style starts here */
 .table {

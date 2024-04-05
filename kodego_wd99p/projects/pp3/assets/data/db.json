@@ -2,73 +2,73 @@
     "user": [
         {
             "id": 1,
-            "type": "admin",
+            "type": "Admin",
             "first_name": "Paityn",
             "last_name": "Fitspatrick"
         },
         {
             "id": 2,
-            "type": "admin",
+            "type": "Admin",
             "first_name": "Giuliana",
             "last_name": "Lambert"
         },
         {
             "id": 3,
-            "type": "member",
+            "type": "Member",
             "first_name": "Jordon",
             "last_name": "White"
         },
         {
             "id": 4,
-            "type": "admin",
+            "type": "Admin",
             "first_name": "Stanley",
             "last_name": "Morton"
         },
         {
             "id": 5,
-            "type": "member",
+            "type": "Member",
             "first_name": "Lizeth",
             "last_name": "Cervantes"
         },
         {
             "id": 6,
-            "type": "member",
+            "type": "Member",
             "first_name": "Paris",
             "last_name": "Vasquez"
         },
         {
             "id": 7,
-            "type": "member",
+            "type": "Member",
             "first_name": "Irene",
             "last_name": "Peck"
         },
         {
             "id": 8,
-            "type": "member",
+            "type": "Member",
             "first_name": "Jair",
             "last_name": "Logan"
         },
         {
             "id": 9,
-            "type": "member",
+            "type": "Member",
             "first_name": "Ashtyn",
             "last_name": "Holloway"
         },
         {
             "id": 10,
-            "type": "member",
+            "type": "Member",
             "first_name": "Tessa",
             "last_name": "Stephenson"
         },
         {
             "id": 11,
-            "type": "member",
+            "type": "Member",
             "first_name": "Giovanni",
             "last_name": "Perkins"
         },
         {
             "id": 12,
-            "type": "member",
+            "type": "Member",
             "first_name": "Patrick",
             "last_name": "Cervantes"
         }
