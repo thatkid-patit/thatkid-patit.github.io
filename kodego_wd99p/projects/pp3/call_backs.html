@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/images/developer_logo_bgblack.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
     <aside id="left" class="bg-a">
@@ -31,7 +32,7 @@
                 </div>
                 <div class="search">
                     <i class='bx bx-search'></i>
-                    <input type="text" placeholder="Search..." id="search-bar">
+                    <input type="text" placeholder="Search...">
                 </div>
             </section>
             <section class="user" id="user-menu">
@@ -44,9 +45,57 @@
         </nav>
         <main id="content-area">
             <!-- content area -->
-            
+            <div id='callback-list-container' class='table'>
+                <table>
+                    <tr>
+                        <th class='bg-a'>First Name</th>
+                        <th class='bg-a'>Last Name</th>
+                        <th class='bg-a'>Contact Number</th>
+                        <th class='bg-a'>Province</th>
+                        <th class='bg-a'>Call Schedule</th>
+                        <th class='bg-a'>Action</th>
+                        </tr>
+                    <tr>
+                        <td>Gloria</td>
+                        <td>de Jesus</td>
+                        <td>09565412354</td>
+                        <td>Oriental Mindoro</td>
+                        <td>Jan 01 2023 | 14:00</td>
+                        <td class='btn-action'>
+                            <div>
+                                <button class='btn-pull'>P u l l</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Rodolfo</td>
+                        <td>Macaraig</td>
+                        <td>09855456332</td>
+                        <td>Batangas</td>
+                        <td>Jan 01 2023 | 14:00</td>
+                        <td class='btn-action'>
+                            <div>
+                                <button class='btn-pull'>P u l l</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Angelika</td>
+                        <td>Aceveda</td>
+                        <td>09963255414</td>
+                        <td>Laguna</td>
+                        <td>Jan 01 2023 | 14:00</td>
+                        <td class='btn-action'>
+                            <div>
+                                <button class='btn-pull'>P u l l</button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                
+            </div>
         </main>
     </aside>
+    
 </body>
-<script src="assets/js/script.js"></script>
 </html>

@@ -21,6 +21,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
 }
 
 #left .logo {
@@ -72,8 +73,8 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: 3px solid #ebebeb;
-    position: fixed;
     width: calc(100% - 300px);
+    position: fixed;
 }
 
 #side-toggler {
@@ -81,6 +82,11 @@ body {
     font-size: 50px;
     cursor: pointer;
     margin: 0 40px 0 0;
+    transition: 0.3s ease;
+}
+
+#side-toggler:hover {
+    background-color: #00000021;
 }
 
 #right nav .burg {
@@ -93,7 +99,6 @@ body {
     border: 3px solid gray;
     border-radius: 10px;
     height: 50px;
-    width: 500px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -119,14 +124,8 @@ body {
     justify-content: flex-start;
 }
 
-#right nav .user i {
-    font-size: 50px;
-    color: gray;
-    margin: 0 100px 0 20px;
-}
-
 #right nav .user div {
-    margin: 0 20px 0 0;
+    margin: 0 20px 0 20px;
 }
 
 #right nav .user div p {
@@ -139,7 +138,6 @@ body {
     color: black;
     font-size: 18px;
     text-align: end;
-    
 }
 
 #right nav .user img {
@@ -148,7 +146,7 @@ body {
 }
 
 #right main {
-    margin-top: 90px;
+    margin-top: 100px;
 }
 /* dashboard starts here */
 #dash-cards {
@@ -169,6 +167,7 @@ body {
     align-items: center;
     margin: 0 10px 10px 10px;
     flex-grow: 1;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1);
 }
 
 #dash-cards .card i {
@@ -208,22 +207,376 @@ body {
     overflow: auto;
     margin: 0 10px 10px 10px;
     flex-grow: 1;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1);
 }
+/* reports starts here */
+.report-config-container {
+    padding: 40px 40px 0 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.report-config-container select {
+    background-color: white;
+    height: 50px;
+    padding: 0 10px 0 10px;
+    border: 3px solid gray;
+    outline: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: left;
+    align-items: center;
+    color: black;
+    line-height: 20px;
+    margin-right: 10px;
+    transition: 0.3s ease;
+}
+
+.report-config-container button {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    align-self: center;
+    font-size: 40px;
+    color: white;
+    padding-top: 3px;
+    transition: 0.3s ease;
+}
+
+.report-config-container button:hover {
+    background-color: #fcf9f9;
+    color: black;
+}
+
+.report-config-container button:active {
+    font-size: 35px;
+}
+/* deals status starts here */
+#deals-status-container {
+    padding: 40px 40px 0 40px;
+}
+/* my products starts here */
+.form-btn-container {
+    padding: 40px 40px 0 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-btn-container div {
+    background-color: white;
+    height: 50px;
+    padding: 12px 10px 10px 10px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    align-items: center;
+    color: black;
+    line-height: 20px;
+    margin-right: 10px;
+}
+
+.form-btn-container button {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+    padding-top: 3px;
+    transition: 0.3s ease;
+}
+
+.form-btn-container button:hover {
+    background-color: #fcf9f9;
+    color: black;
+}
+
+.form-btn-container button:active {
+    font-size: 35px;
+}
+
+.product-container {
+    padding: 40px 40px 0 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-container .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 20px 20px 0;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1);
+}
+
+.product-container .card .prod-categ {
+    height: 50px;
+    color: black;
+    text-align: center;
+    align-content: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.product-container .card .prod-name {
+    height: 100px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: 1000;
+    overflow-x: auto;
+    transition: 0.3s ease;
+}
+
+.product-container .card:hover .prod-name{
+    color: black;
+    background-color: white;
+    font-size: 50px;
+}
+
+.product-container .card .prod-config {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px 0 0;
+}
+
+.product-container .card .prod-config li {
+    margin-right: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.product-container .card .prod-config li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+/* my team starts here */
+.teammate-container {
+    padding: 40px 40px 0 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.teammate-container .card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 20px 20px 0;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .1);
+}
+
+.teammate-container .card .teammate-categ {
+    height: 50px;
+    color: black;
+    text-align: center;
+    align-content: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.teammate-container .card .teammate-name {
+    height: 80px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 1000;
+    overflow-x: auto;
+    transition: 0.3s ease;
+}
+
+.teammate-container .card:hover .teammate-name{
+    color: black;
+    background-color: white;
+    font-size: 40px;
+}
+
+.teammate-container .card .teammate-config {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 10px 0 0;
+}
+
+.teammate-container .card .teammate-config li {
+    margin-right: 20px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.teammate-container .card .teammate-config li a {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+/* table style starts here */
+.table {
+    padding: 40px 40px 0 40px;
+}
+
+.table table {
+    width: 100%;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+.table table tr {
+    border-bottom: 1px gray;
+}
+
+.table table th {
+    color: white;
+    padding: 20px;
+    font-size: 18px;
+}
+
+.table table td {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.table table td.btn-action {
+    width: 300px;
+}
+
+.table table td.btn-action div {
+    display: flex;
+    justify-content: center;
+}
+
+.table table td button.btn-delivered {
+    color: white;
+    background-color: #2e7d32;
+    border-radius: 5px;
+    border: 3px solid #1b5e20;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    padding: 0 10px 0 10px;
+}
+
+.table table td button.btn-delivered:hover {
+    background-color: #359a3a;
+}
+
+.table table td button.btn-delivered:active {
+    background-color: #1b5e20;
+}
+
+.table table td button.btn-cancelled {
+    color: white;
+    background-color: #b71c1c;
+    border-radius: 5px;
+    border: 3px solid #8a0602;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    padding: 0 10px 0 10px;
+}
+
+.table table td button.btn-cancelled:hover {
+    background-color: #e72424;
+}
+
+.table table td button.btn-cancelled:active {
+    background-color: #8a0602;
+}
+
+.table table td button.btn-pending {
+    color: black;
+    background-color: #ff8f00;
+    border-radius: 5px;
+    border: 3px solid #ff6f00;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    padding: 0 10px 0 10px;     
+}
+
+.table table td button.btn-pending:hover {
+    background-color: #f69c26;
+}
+
+.table table td button.btn-pending:active {
+    background-color: #ff6f00;
+}
+
+.table table td button.btn-pull {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid gray;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    padding: 0 10px 0 10px;
+    margin-left: 3px;
+}
+
+.table table td button.btn-pull:hover {
+    background-color: gray;
+    color: white;
+}
+
+.table table td button.btn-pull:active {
+    background-color: rgba(128, 128, 128, 0.84);
+}
+
+
+
+
+
+
+
+
 /* media query starts here*/
-@media (max-width: 769px) {
+@media (max-width: 1025px) {
     #left {
-        width: 280px;
         position: fixed;
-        left: -280px;
+        left: -300px;
+        transition: 0.3s ease-in-out;
     }
+
+    #left.toggleOn {
+        left: 0px;
+    }
+
     #right {
         width: 100%;
-        margin-left: 0;
+        margin-left: 0px;
         display: inline-block;
+        transition: 0.3s ease-in-out;
     }
+
+    #right.toggleOn {
+        margin-left: 300px;
+    }
+
     #right nav {
         width: 100%;
     }
+
     #side-toggler {
         display: initial;
     }
@@ -237,6 +590,12 @@ body {
 
 .bg-a {
     background-color: #006e8c;
+}
+
+.bc-a {
+    background-color: #006e8c;
+    border: 3px solid #006e8c;
+    border-radius: 5px;
 }
 
 .ic-a {

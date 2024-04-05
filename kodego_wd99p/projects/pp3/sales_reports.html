@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/images/developer_logo_bgblack.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
     <aside id="left" class="bg-a">
@@ -31,7 +32,7 @@
                 </div>
                 <div class="search">
                     <i class='bx bx-search'></i>
-                    <input type="text" placeholder="Search..." id="search-bar">
+                    <input type="text" placeholder="Search...">
                 </div>
             </section>
             <section class="user" id="user-menu">
@@ -44,9 +45,27 @@
         </nav>
         <main id="content-area">
             <!-- content area -->
+            <section class='report-config-container'>
+                <select name='select-data' id='select-data'>
+                    <option value=''>Select Data</option>
+                    <option value='report-sales'>Sales</option>
+                    <option value='report-product'>Product</option>
+                    <option value='report-people'>People</option>
+                </select>
+                <select name='select-chart' id='rselect-chart'>
+                    <option value=''>Select Chart</option>
+                    <option value='report-table'>Table</option>
+                    <option value='report-bar'>Bar Graph</option>
+                    <option value='report-line'>Line Graph</option>
+                    <option value='report-pie'>Pie Chart</option>
+                </select>
+                <button class='bc-a'>
+                    <i class='bx bx-customize'></i>
+                </button> 
+            </section>
             
         </main>
     </aside>
+    
 </body>
-<script src="assets/js/script.js"></script>
 </html>

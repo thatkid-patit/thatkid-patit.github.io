@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="assets/images/developer_logo_bgblack.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
     <aside id="left" class="bg-a">
@@ -31,7 +32,7 @@
                 </div>
                 <div class="search">
                     <i class='bx bx-search'></i>
-                    <input type="text" placeholder="Search..." id="search-bar">
+                    <input type="text" placeholder="Search...">
                 </div>
             </section>
             <section class="user" id="user-menu">
@@ -44,9 +45,50 @@
         </nav>
         <main id="content-area">
             <!-- content area -->
-            
+            <section id="dash-cards">
+                <div class='card'>
+                    <i class='bx bx-money ic-a'></i>
+                    <div>
+                        <h3>$9,999</h3>
+                        <h5>This Month</h5>
+                    </div>
+                </div>
+                <div class='card'>
+                    <i class='bx bx-category ic-a'></i>
+                    <div>
+                        <h3>9,999</h3>
+                        <h5>Products Sold</h5>
+                    </div>
+                </div>
+                <div class='card'>
+                    <i class='bx bxs-truck ic-a'></i>
+                    <div>
+                        <h3>9,999</h3>
+                        <h5>In-transit</h5>
+                    </div>
+                </div>
+                <div class='card'>
+                    <i class='bx bx-library ic-a'></i>
+                    <div>
+                        <h3>9,999</h3>
+                        <h5>Cold Leads</h5>
+                    </div>
+                </div>
+            </section>
+            <section id='dash-graphs'>
+                <div class='graph'>
+                    <div id='sales-graph'>
+                    </div>
+                    <h3>Sales Trend</h3>
+                </div>
+                <div class='graph'>
+                    <div id='product-graph'>
+                    </div>
+                    <h3>Top Selling Product</h3>
+                </div>
+            </section>
         </main>
     </aside>
+    
 </body>
-<script src="assets/js/script.js"></script>
 </html>
