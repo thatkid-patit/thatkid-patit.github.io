@@ -4,73 +4,188 @@
             "id": 1,
             "type": "Admin",
             "first_name": "Paityn",
-            "last_name": "Fitspatrick"
+            "last_name": "Fitspatrick",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         },
         {
             "id": 2,
             "type": "Admin",
             "first_name": "Giuliana",
-            "last_name": "Lambert"
+            "last_name": "Lambert",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         },
         {
             "id": 3,
             "type": "Member",
             "first_name": "Jordon",
-            "last_name": "White"
+            "last_name": "White",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         },
         {
             "id": 4,
             "type": "Admin",
             "first_name": "Stanley",
-            "last_name": "Morton"
+            "last_name": "Morton",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         },
         {
             "id": 5,
             "type": "Member",
             "first_name": "Lizeth",
-            "last_name": "Cervantes"
+            "last_name": "Cervantes",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         },
         {
             "id": 6,
             "type": "Member",
             "first_name": "Paris",
-            "last_name": "Vasquez"
+            "last_name": "Vasquez",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         },
         {
             "id": 7,
             "type": "Member",
             "first_name": "Irene",
-            "last_name": "Peck"
+            "last_name": "Peck",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         },
         {
             "id": 8,
             "type": "Member",
             "first_name": "Jair",
-            "last_name": "Logan"
+            "last_name": "Logan",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         },
         {
             "id": 9,
             "type": "Member",
             "first_name": "Ashtyn",
-            "last_name": "Holloway"
+            "last_name": "Holloway",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": ""
         },
         {
             "id": 10,
             "type": "Member",
             "first_name": "Tessa",
-            "last_name": "Stephenson"
+            "last_name": "Stephenson",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         },
         {
             "id": 11,
             "type": "Member",
             "first_name": "Giovanni",
-            "last_name": "Perkins"
+            "last_name": "Perkins",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         },
         {
             "id": 12,
             "type": "Member",
             "first_name": "Patrick",
-            "last_name": "Cervantes"
+            "last_name": "Cervantes",
+            "employee_ID": "",
+            "password": "",
+            "acquisition_date": "",
+            "promotion_date": "",
+            "demotion_date": "",
+            "numOf_sales": "",
+            "numOf_pending": "",
+            "numOf_cancelled": "",
+            "numwOf_new": "",
+            "numOf_callback": ""
         }
     ],
     "prospect": [
@@ -82,7 +197,11 @@
             "address": "475 Salas St, Ermita, Manila, 1000 Metro Manila",
             "province": "Metro Manila",
             "status_id": 5,
-            "product_id": 5
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 5,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 2,
@@ -92,7 +211,11 @@
             "address": "2825 Park Avenue, Pasay City",
             "province": "Metro Manila",
             "status_id": 2,
-            "product_id": 16
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 16,
+            "callback_date": "Mar 23 2023",
+            "notes": ""
         },
         {
             "id": 3,
@@ -102,7 +225,11 @@
             "address": "Basud, Malilipot",
             "province": "Malilipot",
             "status_id": 4,
-            "product_id": 1
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 1,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 4,
@@ -112,7 +239,11 @@
             "address": "#117-119 Quirino Highway, Baesa, Quezon City",
             "province": "Metro Manila",
             "status_id": 3,
-            "product_id": 13
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 13,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 5,
@@ -122,7 +253,11 @@
             "address": "G/F Mary Bachrach Building 25th Street Port Area 1000 Manila",
             "province": "Manila",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 6,
@@ -132,7 +267,11 @@
             "address": "5550 Boyle Street Palanan 1200, Makati City",
             "province": "Metro Manila",
             "status_id": 4,
-            "product_id": 6
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 6,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 7,
@@ -142,7 +281,11 @@
             "address": "Ayala Highway, U-207 L2 SM City, Barangay Marawoy, Lipa",
             "province": "Batangas",
             "status_id": 2,
-            "product_id": 16
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 16,
+            "callback_date": "Oct 12 2024",
+            "notes": ""
         },
         {
             "id": 8,
@@ -152,7 +295,11 @@
             "address": "APN Building, 172 A. Mabini Street, Maypajo, Caloocan City",
             "province": "Metro Manila",
             "status_id": 3,
-            "product_id": 9
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 9,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 9,
@@ -162,7 +309,11 @@
             "address": "Laguna Technopark Inc., Brgy. Loma, Bian Laguna",
             "province": "Laguna",
             "status_id": 5,
-            "product_id": 15
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 15,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 10,
@@ -172,7 +323,11 @@
             "address": "Unit 1001 V.V. Soliven Commercial Complex 1001 Edsa Greenhills 1503",
             "province": "San Juan",
             "status_id": 3,
-            "product_id": 3
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 3,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 11,
@@ -182,7 +337,11 @@
             "address": "Salcedo Village,, Metro Manila",
             "province": "Makati City",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 12,
@@ -192,7 +351,11 @@
             "address": "524 T. Alonzo Street Manila",
             "province": "Metro Manila",
             "status_id": 5,
-            "product_id": 5
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 5,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 13,
@@ -202,7 +365,11 @@
             "address": "G/F FRC SuperMall Kilometer 20, general Aguinaldo Highway Imus City",
             "province": "Cavite",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 14,
@@ -212,7 +379,11 @@
             "address": "Libertad-Lopez Jaena Street, Poblacion Bacolod",
             "province": "Negros Occidenta",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 15,
@@ -222,7 +393,11 @@
             "address": "Quezon Avenue San Fernando",
             "province": "La Union",
             "status_id": 3,
-            "product_id": 1
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 1,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 16,
@@ -232,7 +407,11 @@
             "address": "Door #4 & 5 Doco Building, Guiwan Highway Zamboanga City",
             "province": "Zamboanga del Sur",
             "status_id": 3,
-            "product_id": 12
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 12,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 17,
@@ -242,7 +421,11 @@
             "address": "Charly Resources Building, Ledesma corner Quezon Street Iloilo City",
             "province": "Iloilo",
             "status_id": 5,
-            "product_id": 1
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 1,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 18,
@@ -252,7 +435,11 @@
             "address": "#47 Castillo Building, Balzain Highway Tuguegarao City",
             "province": "Cagayan",
             "status_id": 3,
-            "product_id": 12
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 12,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 19,
@@ -262,7 +449,11 @@
             "address": "Davao-Agusan Highway, Lanang Davao City",
             "province": "Davao del Sur",
             "status_id": 3,
-            "product_id": 7
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 7,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 20,
@@ -272,7 +463,11 @@
             "address": "Regidor Street Poblacion",
             "province": "Santa Cruz",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 21,
@@ -282,7 +477,11 @@
             "address": "138 Capt Cruz 1400 Valenzuela",
             "province": "Valenzuela",
             "status_id": 5,
-            "product_id": 5
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 5,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 22,
@@ -292,7 +491,11 @@
             "address": "Calajo-an Minglanilla",
             "province": "Minglanilla",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 23,
@@ -302,7 +505,11 @@
             "address": "Cebu City169 C. Padilla St. Cebu City",
             "province": "Cebu",
             "status_id": 5,
-            "product_id": 16
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 16,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 24,
@@ -312,7 +519,11 @@
             "address": "#140 Evangelista Street Batangas City",
             "province": "Batangas",
             "status_id": 4,
-            "product_id": 1
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 1,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 25,
@@ -322,7 +533,11 @@
             "address": "2019 Villagracia Building, West Bajac Bajac beside Video City Olongapo City",
             "province": "Zambales",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 26,
@@ -332,7 +547,11 @@
             "address": "Corner General Luna and C.P. Garcia Streets Dipolog",
             "province": "Zamboanga del Norte",
             "status_id": 3,
-            "product_id": 13
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 13,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 27,
@@ -342,7 +561,11 @@
             "address": "Barrio Tikay, Malolos Bulacan",
             "province": "Bulacan",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 28,
@@ -352,7 +575,11 @@
             "address": "248 Del Monte Avenue Quezon City",
             "province": "Metro Manila",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 29,
@@ -362,7 +589,11 @@
             "address": "501-A Quirino Avenue, Tambo Paranaque City",
             "province": "Metro Manila",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 30,
@@ -372,7 +603,11 @@
             "address": "SBC Building, McArthur Highway, Balibago  Angeles City",
             "province": "Pampanga",
             "status_id": 1,
-            "product_id": 0
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 0,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 31,
@@ -382,7 +617,11 @@
             "address": "57 Real Street Lovon Sawang",
             "province": "Abuyog",
             "status_id": 2,
-            "product_id": 16
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 16,
+            "callback_date": "Aug 27 2024",
+            "notes": ""
         },
         {
             "id": 32,
@@ -392,7 +631,11 @@
             "address": "Bodega Ihaw Ihaw Pasonanca",
             "province": "Pasonanca",
             "status_id": 5,
-            "product_id": 10
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 10,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 33,
@@ -402,7 +645,11 @@
             "address": "Barcelona Street, Barangay San Jose Zamboanga City",
             "province": "Zamboanga del Sur",
             "status_id": 5,
-            "product_id": 16
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 16,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 34,
@@ -412,7 +659,11 @@
             "address": "Berthaphil Clark Center Annex A, Jose Abad Santos Ave., Clark Freeport Zone Angeles City",
             "province": "Pampanga",
             "status_id": 4,
-            "product_id": 6
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 6,
+            "callback_date": "",
+            "notes": ""
         },
         {
             "id": 35,
@@ -422,7 +673,11 @@
             "address": "1145-A M. Ocampo Cor. P. Del Rosario Street Barrio Obrero",
             "province": "Barrio Obrero",
             "status_id": 2,
-            "product_id": 16
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 16,
+            "callback_date": "Dec 25 2024",
+            "notes": ""
         },
         {
             "id": 36,
@@ -432,7 +687,11 @@
             "address": "Nalupta Commercial Building, washington Street, Barangay #4 Subait",
             "province": "Batac",
             "status_id": 4,
-            "product_id": 5
+            "status_date_change": "",
+            "status_time_change": "",
+            "product_id": 5,
+            "callback_date": "",
+            "notes": ""
         }
     ],
     "product": [
@@ -440,96 +699,112 @@
             "id": 1,
             "type": "Business Fiber",
             "product_name": "50 mbps",
+            "product_code": "bf50",
             "price": 15.00
         },
         {
             "id": 2,
             "type": "Business Fiber",
             "product_name": "100 mbps",
+            "product_code": "bf100",
             "price": 28.00
         },
         {
             "id": 3,
             "type": "Business Fiber",
             "product_name": "300 mbps",
+            "product_code": "bf300",
             "price": 80.00
         },
         {
             "id": 4,
             "type": "Business Fiber",
             "product_name": "500 mbps",
+            "product_code": "bf500",
             "price": 110.00
         },
         {
             "id": 5,
             "type": "Business Fiber",
             "product_name": "1,000 mbps",
+            "product_code": "bf1k",
             "price": 215.00
         },
         {
             "id": 6,
             "type": "Business Fiber",
             "product_name": "2,000 mbps",
+            "product_code": "bf2k",
             "price": 400.00
         },
         {
             "id": 7,
             "type": "Home Fiber",
             "product_name": "50 mbps", 
+            "product_code": "hf50",
             "price": 10.00
         },
         {
             "id": 8,
             "type": "Business Fiber",
             "product_name": "100 mbps",
+            "product_code": "hf100",
             "price": 18.00
         },
         {
             "id": 9,
             "type": "Home Fiber",
             "product_name": "300 mbps",
+            "product_code": "hf300",
             "price": 50.00
         },
         {
             "id": 10,
             "type": "Home Fiber",
             "product_name": "500 mbps",
+            "product_code": "hf500",
             "price": 85.00
         },
         {
             "id": 11,
             "type": "Home Fiber",
             "product_name": "1,000 mbps",
+            "product_code": "hf1k",
             "price": 160.00
         },
         {
             "id": 12,
             "type": "Home Fiber",
             "product_name": "2,000 mbps",
+            "product_code": "hf2k",
             "price": 300.00
         },
         {
             "id": 13,
             "type": "Dedicated Line",
             "product_name": "500 mbps",
+            "product_code": "dl500",
             "price": 175.00
         },
         {
             "id": 14,
             "type": "Dedicated Line",
             "product_name": "1,000 mbps",
+            "product_code": "dl1k",
             "price": 325.00
         },
         {
             "id": 15,
             "type": "Dedicated Line",
             "product_name": "2,000 mbps",
+            "product_code": "dl2k",
             "price": 600.00
         },
         {
             "id": 16,
             "type": "Dedicated Line",
             "product_name": "5,000 mbps",
+            "product_code": "dl5k",
             "price": 1500.00
         }
     ],

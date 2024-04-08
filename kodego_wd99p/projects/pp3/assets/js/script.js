@@ -2,11 +2,9 @@ document.getElementById("side-toggler").addEventListener('click', function() {
     document.getElementById("left").classList.toggle("toggleOn");
     document.getElementById("right").classList.toggle("toggleOn");
 });
-
 xhr = new XMLHttpRequest();
 xhr.open("GET", "assets/data/db.json", true);
 xhr.send();
-
 xhr.onload = function() {
     if(this.readyState == 4 && this.status == 200) {
 
@@ -55,25 +53,27 @@ xhr.onload = function() {
         // onload commands
         loadDashboard(dashboardSales, arrDashboardProducts.length, arrDashboardPending.length, arrDashboardLeads.length);
         document.querySelector("#on-load").classList.add("active");
-
         // side-bar commands
         document.querySelectorAll('.side-menu-item').forEach(function(sideBarItem) {
             sideBarItem.addEventListener('click', function() {
                 document.querySelector('.active')?.classList.remove('active');
                 this.classList.add('active');
                 if(this.innerText.toLowerCase() == "dashboard") {
-                    loadDashboard(dashboardSales, arrDashboardProducts.length, arrDashboardPending.length, arrDashboardLeads.length);   
+                    loadDashboard(dashboardSales, arrDashboardProducts.length, arrDashboardPending.length, arrDashboardLeads.length); 
                 }else if(this.innerText.toLowerCase() == "reports") {
                     loadReports();
                 }else if(this.innerText.toLowerCase() == "deals status") {
                     loadDealStatus();
                     drawDealsStatusTable(arrTableDataConfig);
+                    dropProduct(arrMyProducts);
                 }else if(this.innerText.toLowerCase() == "scheduled calls") {
                     loadScheduledCalls();
                     drawScheduledCallsTable(arrTableDataConfig);
+                    dropProduct(arrMyProducts);
                 }else if(this.innerText.toLowerCase() == "leads bank") {
                     loadLeadsBank();
                     drawLeadsBankTable(arrTableDataConfig);
+                    dropProduct(arrMyProducts);
                 }else if(this.innerText.toLowerCase() == "my products") {
                     loadMyProducts();
                     drawMyProductsCard(arrMyProducts);
@@ -85,133 +85,6 @@ xhr.onload = function() {
         })
     }
 }
-
-//draw table commands
-function drawDealsStatusTable(a) {
-    tr = "";
-    for(const b of a) {
-        if(b.status_id == 1 || b.status_id == 2) {
-            continue;
-        }
-        let btn = "";
-        if(b.status_id == 3) {
-            btn = "Pending";
-        }else if(b.status_id == 4) {
-            btn = "Delivered";
-        }else if(b.status_id == 5) {
-            btn = "Cancelled";
-        }
-        tr += `
-            <tr>
-                <td>${b.first_name}</td>
-                <td>${b.last_name}</td>
-                <td>${b.contact}</td>
-                <td>${b.province}</td>
-                <td class='btn-action'>
-                    <div>
-                        <button class='btn-${btn.toLowerCase()}'>${btn}</button>
-                        <button class='btn-pull'>P u l l</button>
-                    </div>
-                </td>
-            </tr>
-        `;
-    }
-    document.querySelector("#table-deal-status").innerHTML = tr;
-}
-
-function drawScheduledCallsTable(a) {
-    tr = "";
-    for(const b of a) {
-        if(b.status_id !== 2 ) {
-            continue;
-        }
-        tr += `
-            <tr>
-                <td>${b.first_name}</td>
-                <td>${b.last_name}</td>
-                <td>${b.contact}</td>
-                <td>${b.province}</td>
-                <td>${"underdevelopment"}</td>
-                <td class='btn-action'>
-                    <div>
-                        <button class='btn-pull'>P u l l</button>
-                    </div>
-                </td>
-            </tr>
-        `;
-    }
-    document.querySelector("#table-scheduled-calls").innerHTML = tr;
-}
-
-function drawLeadsBankTable(a) {
-    tr = "";
-    for(const b of a) {
-        if(b.status_id !== 1 ) {
-            continue;
-        }
-        tr += `
-            <tr>
-                <td>${b.first_name}</td>
-                <td>${b.last_name}</td>
-                <td>${b.contact}</td>
-                <td>${b.province}</td>
-                <td class='btn-action'>
-                    <div>
-                        <button class='btn-pull'>P u l l</button>
-                    </div>
-                </td>
-            </tr>
-        `;
-    }
-    document.querySelector("#table-leads-bank").innerHTML = tr;
-}
-
-//draw cards command
-function drawMyProductsCard(a) {
-    deck = "";
-    for(const b of a) {
-        deck += `
-            <div class='card'>
-                <section class='prod-categ'>
-                    ${b.type}
-                </section>
-                <section class='prod-name bg-a'>
-                    ${b.product_name}
-                </section>
-                <section class='prod-price'>
-                    $ ${b.price.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                </section>
-                <section class='prod-config'>
-                    <li><a href="">Edit</a></li>
-                    <li><a href="">Delete</a></li>
-                </section>
-            </div>
-        `;
-    }
-    document.querySelector(".product-container").innerHTML = deck;
-}
-
-function drawMyTeamCard(a) {
-    deck = "";
-    for(const b of a) {
-        deck += `
-            <div class='card'>
-                <section class='teammate-categ'>
-                    ${b.type}
-                </section>
-                <section class='teammate-name bg-a'>
-                    ${b.first_name} ${b.last_name}
-                </section>
-                <section class='teammate-config'>
-                    <li><a href="">Edit</a></li>
-                    <li><a href="">Delete</a></li>
-                </section>
-            </div>
-        `;
-    }
-    document.querySelector(".teammate-container").innerHTML = deck;
-}
-
 // page load functions
 function loadDashboard(a = 0, b = 0, c = 0, d = 0) {
     let main = `
@@ -260,7 +133,6 @@ function loadDashboard(a = 0, b = 0, c = 0, d = 0) {
     `;
     document.querySelector("#content-area").innerHTML = main;
 }
-
 function loadReports() {
     let main = `
             <section class='report-config-container'>
@@ -284,7 +156,6 @@ function loadReports() {
     `;
     document.querySelector("#content-area").innerHTML = main;
 }
-
 function loadDealStatus() {
     let main = `
             <div id='deals-status-container' class='table'>
@@ -304,7 +175,6 @@ function loadDealStatus() {
     `;
     document.querySelector("#content-area").innerHTML = main;
 }
-
 function loadScheduledCalls() {
     let main = `
             <div id='callback-list-container' class='table'>
@@ -326,7 +196,6 @@ function loadScheduledCalls() {
     `;
     document.querySelector("#content-area").innerHTML = main;
 }
-
 function loadLeadsBank() {
     let main = `
             <section class='form-btn-container'>
@@ -353,7 +222,6 @@ function loadLeadsBank() {
     `;
     document.querySelector("#content-area").innerHTML = main;
 }
-
 function loadMyProducts() {
     let main = `
             <section class='form-btn-container'>
@@ -367,7 +235,6 @@ function loadMyProducts() {
     `;
     document.querySelector("#content-area").innerHTML = main;
 }
-
 function loadMyTeam() {
     let main = `
             <section class='form-btn-container'>
@@ -380,6 +247,137 @@ function loadMyTeam() {
             </section>
     `;
     document.querySelector("#content-area").innerHTML = main;
+}
+// draw cards command
+function drawMyProductsCard(a) {
+    deck = "";
+    for(const b of a) {
+        deck += `
+            <div class='card'>
+                <section class='prod-categ'>
+                    ${b.type}
+                </section>
+                <section class='prod-name bg-a'>
+                    ${b.product_name}
+                </section>
+                <section class='prod-price'>
+                    $ ${b.price.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                </section>
+                <section class='prod-config'>
+                    <li><a href="">Edit</a></li>
+                    <li><a href="">Delete</a></li>
+                </section>
+            </div>
+        `;
+    }
+    document.querySelector(".product-container").innerHTML = deck;
+}
+function drawMyTeamCard(a) {
+    deck = "";
+    for(const b of a) {
+        deck += `
+            <div class='card'>
+                <section class='teammate-categ'>
+                    ${b.type}
+                </section>
+                <section class='teammate-name bg-a'>
+                    ${b.first_name} ${b.last_name}
+                </section>
+                <section class='teammate-config'>
+                    <li><a href="">Edit</a></li>
+                    <li><a href="">Delete</a></li>
+                </section>
+            </div>
+        `;
+    }
+    document.querySelector(".teammate-container").innerHTML = deck;
+}
+// draw table commands
+function drawDealsStatusTable(a) {
+    tr = "";
+    for(const b of a) {
+        if(b.status_id == 1 || b.status_id == 2) {
+            continue;
+        }
+        let btn = "";
+        if(b.status_id == 3) {
+            btn = "Pending";
+        }else if(b.status_id == 4) {
+            btn = "Delivered";
+        }else if(b.status_id == 5) {
+            btn = "Cancelled";
+        }
+        tr += `
+            <tr>
+                <td>${b.first_name}</td>
+                <td>${b.last_name}</td>
+                <td>${b.contact}</td>
+                <td>${b.province}</td>
+                <td class='btn-action'>
+                    <div>
+                        <button class='btn-${btn.toLowerCase()}'>${btn}</button>
+                        <button class='btn-pull'>P u l l</button>
+                    </div>
+                </td>
+            </tr>
+        `;
+    }
+    document.querySelector("#table-deal-status").innerHTML = tr;
+}
+function drawScheduledCallsTable(a) {
+    tr = "";
+    for(const b of a) {
+        if(b.status_id !== 2 ) {
+            continue;
+        }
+        tr += `
+            <tr>
+                <td>${b.first_name}</td>
+                <td>${b.last_name}</td>
+                <td>${b.contact}</td>
+                <td>${b.province}</td>
+                <td>${b.callback_date}</td>
+                <td class='btn-action'>
+                    <div>
+                        <button class='btn-pull'>P u l l</button>
+                    </div>
+                </td>
+            </tr>
+        `;
+    }
+    document.querySelector("#table-scheduled-calls").innerHTML = tr;
+}
+function drawLeadsBankTable(a) {
+    tr = "";
+    for(const b of a) {
+        if(b.status_id !== 1 ) {
+            continue;
+        }
+        tr += `
+            <tr>
+                <td>${b.first_name}</td>
+                <td>${b.last_name}</td>
+                <td>${b.contact}</td>
+                <td>${b.province}</td>
+                <td class='btn-action'>
+                    <div>
+                        <button class='btn-pull'>P u l l</button>
+                    </div>
+                </td>
+            </tr>
+        `;
+    }
+    document.querySelector("#table-leads-bank").innerHTML = tr;
+}
+// populate dropdowns w/ json data
+function dropProduct(a) {
+    select = "<option value='0'>Select to add/change product</option>";
+    for(const b of a) {
+        select += `
+            <option value='${b.id}'>${b.product_code}</option>
+        `;
+    }
+    document.querySelector('#select-product').innerHTML = select;
 }
 
 

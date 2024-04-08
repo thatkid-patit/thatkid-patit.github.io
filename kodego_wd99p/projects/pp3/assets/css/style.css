@@ -21,7 +21,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 999;
+    z-index: 100;
 }
 
 #left .logo {
@@ -60,6 +60,7 @@ body {
 
 #right {
     width: calc(100% - 300px);
+    min-width: 810px;
     background-color: #ebebeb;
     margin: 0 0 0 300px;
     position: relative;
@@ -75,6 +76,7 @@ body {
     border-bottom: 3px solid #ebebeb;
     width: calc(100% - 300px);
     position: fixed;
+    z-index: 75;
 }
 
 #side-toggler {
@@ -506,7 +508,7 @@ body {
 }
 
 .table table td button.btn-delivered:hover {
-    background-color: #359a3a;
+    background-color: rgba(53, 154, 58, 0.829);
 }
 
 .table table td button.btn-delivered:active {
@@ -525,7 +527,7 @@ body {
 }
 
 .table table td button.btn-cancelled:hover {
-    background-color: #e72424;
+    background-color: rgba(231, 36, 36, 0.822);
 }
 
 .table table td button.btn-cancelled:active {
@@ -544,7 +546,7 @@ body {
 }
 
 .table table td button.btn-pending:hover {
-    background-color: #f69c26;
+    background-color: rgba(246, 156, 38, 0.807);
 }
 
 .table table td button.btn-pending:active {
@@ -571,6 +573,336 @@ body {
 .table table td button.btn-pull:active {
     background-color: rgba(128, 128, 128, 0.84);
 }
+/* modals start here */
+.modal-bg {
+    z-index: 125;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    transition: 0.3 ease;
+}
+
+.modal-box {
+    width: 700px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.modal-box h3 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+#status-pop-deals .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+#status-pop-deals h4 {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+#status-pop-deals .status-buttons {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+
+#status-pop-deals .status-buttons button {
+    height: 50px;
+    width: 180px;
+    font-size: 25px;
+    font-weight: 900;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.details .details-1,
+.details .details-2,
+.details .details-5,
+.details .details-p { 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 650px;
+    margin: 0 0 15px 30px;
+}
+
+.details .details-1 div,
+.details .details-2 div,
+.details .details-p div {
+    width: 300px;
+}
+
+.details .details-1 div label,
+.details .details-1 div input,
+.details .details-2 div label,
+.details .details-2 div input,
+.details .details-p div label {
+    width: 90%;
+    font-size: 15px;
+    color: black;
+}
+
+.details .details-1 div input,
+.details .details-2 div input,
+.details .details-3 input {
+    height: 40px;
+    padding: 20px;
+    margin-top: 5px;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+.details .details-p div h5,
+.details .details-1 div h5,
+.details .details-2 div h5,
+.details .details-3 h5 {
+    height: auto;
+    padding: 10px 10px 10px 30px;
+    width: 90%;
+    font-size: 20px;
+    color: white;
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+.details .details-3 h5 {
+    width: 88% !important;
+}
+
+#pull-pop-deals .details .details-1 label,
+#pull-pop-deals .details .details-2 label,
+#pull-pop-deals .details .details-3 label,
+#pull-pop-deals .details .details-p label {
+    color: gray;
+}
+
+.details .details-3,
+.details .details-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 650px;
+    margin: 0 0 15px 30px;
+}
+
+#pull-pop-deals .details .details-4 {
+    flex-direction: none !important;
+    justify-content: flex-start !important;
+}
+
+.details .details-3 label,
+.details .details-3 input,
+.details .details-4 label,
+.details .details-4 textarea {
+    font-size: 15px;
+    width: 570px;
+    color: black;
+}
+
+.details .details-4 textarea {
+    padding: 20px;
+    margin: 5px 0 40px 0;
+    border: 3px solid gray;
+    border-radius: 5px;
+}
+
+#pull-pop-bank .details .details-4 textarea,
+#pull-pop-callback .details .details-4 textarea,
+#pull-pop-deals .details .details-4 textarea {
+    margin: 5px 0 15px 0 !important;
+}
+
+.details .details-5 {
+    align-items: flex-start !important;
+}
+
+.details .details-5 .details-5-1 {
+    width: 270px;
+    margin-right: 50px;
+}
+
+.details .details-5 .details-5-1 select {
+    padding: 10px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.details .details-5 .details-5-2 div {
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.details .details-5 .details-5-2 #calendar {
+    padding: 10px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+}
+
+#add-new-lead .btn-cancel-save,
+#pull-pop-bank .btn-cancel-save,
+#pull-pop-callback .btn-cancel-save,
+#pull-pop-deals .btn-cancel-save {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#add-new-lead-cancel,
+#add-new-lead-save,
+#pull-pop-bank-delete,
+#pull-pop-bank-confirm,
+#pull-pop-bank-cancel,
+#pull-pop-bank-save,
+#pull-pop-callback-delete,
+#pull-pop-callback-confirm,
+#pull-pop-callback-cancel,
+#pull-pop-callback-save,
+#pull-pop-deals-delete,
+#pull-pop-deals-cancel,
+#pull-pop-deals-save {
+    width: 90px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+#add-new-lead-cancel,
+#pull-pop-bank-cancel,
+#pull-pop-callback-cancel,
+#pull-pop-deals-cancel,
+#status-pop-deals .status-buttons #status-pop-deals-inTransit {
+    border: 3px solid #ff6f00;
+    background-color: #ff8f00;
+    color: black;
+    
+}
+
+#add-new-lead-cancel:hover,
+#pull-pop-bank-cancel:hover,
+#pull-pop-callback-cancel:hover,
+#pull-pop-deals-cancel:hover,
+#status-pop-deals .status-buttons #status-pop-deals-inTransit:hover {
+    background-color: #ff9100c6;
+}
+
+#add-new-lead-cancel:active,
+#pull-pop-bank-cancel:active,
+#pull-pop-callback-cancel:active,
+#pull-pop-deals-cancel:active,
+#status-pop-deals .status-buttons #status-pop-deals-inTransit:active {
+    background-color: #ff6f00;
+}
+
+#add-new-lead-save,
+#pull-pop-bank-save,
+#pull-pop-callback-save,
+#pull-pop-deals-save,
+#status-pop-deals .status-buttons #status-pop-deals-delivered {
+    border: 3px solid #1b5e20;
+    background-color: #2e7d32;
+    color: white;
+}
+
+#add-new-lead-save:hover,
+#pull-pop-bank-save:hover,
+#pull-pop-callback-save:hover,
+#pull-pop-deals-save:hover,
+#status-pop-deals .status-buttons #status-pop-deals-delivered:hover {
+    background-color: #2e7d32d2;
+}
+
+#add-new-lead-save:active,
+#pull-pop-bank-active,
+#pull-pop-callback-active,
+#pull-pop-deals-active,
+#status-pop-deals .status-buttons #status-pop-deals-delivered:active {
+    background-color: #1b5e20;
+}
+
+#pull-pop-bank .header,
+#pull-pop-callback .header,
+#pull-pop-deals .header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#status-pop-deals .status-buttons #status-pop-deals-cancelled {
+    border: 3px solid #8a0602;
+    background-color: #b71c1c;
+    color: white;
+}
+
+#pull-pop-bank-delete,
+#pull-pop-callback-delete,
+#pull-pop-deals-delete {
+    width: 120px !important;
+    height: 30px !important;
+    font-size: 14px !important;
+    border: 3px solid #8a0602;
+    background-color: #b71c1c;
+    color: white;
+}
+
+#pull-pop-bank-delete:hover,
+#pull-pop-callback-delete:hover,
+#pull-pop-deals-delete:hover,
+#status-pop-deals .status-buttons #status-pop-deals-cancelled:hover {
+    background-color: #b71c1cd7;
+}
+
+#pull-pop-bank-delete:active,
+#pull-pop-callback-delete:active,
+#pull-pop-deals-delete:active,
+#status-pop-deals .status-buttons #status-pop-deals-cancelled:active {
+    background-color: #8a0602;
+}
+
+#pull-pop-bank-confirm,
+#pull-pop-callback-confirm {
+    width: 100% !important;
+    border: 3px solid #0d47a1;
+    background-color: #428bca;
+    color: white;
+    margin-bottom: 60px;
+}
+
+#pull-pop-bank-confirm:hover,
+#pull-pop-callback-confirm:hover {
+    background-color: #428bcada;
+}
+
+#pull-pop-bank-confirm:active,
+#pull-pop-callback-confirm:active {
+    background-color: #0d47a1;
+}
+
+
 
 @keyframes loadPage {
     from {
@@ -630,6 +962,11 @@ body {
     border-radius: 5px;
 }
 
+.modal-a {
+    border: 10px solid #006e8c;
+    border-radius: 30px;
+}
+
 .ic-a {
     background-color: none;
     color: #006e8c;
@@ -639,4 +976,5 @@ body {
     background-color: none;
     color: #ebebeb;
 }
+
 

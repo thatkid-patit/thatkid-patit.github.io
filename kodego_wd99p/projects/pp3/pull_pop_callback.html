@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KodeGo PP3 | CRM</title>
+    <link rel="shortcut icon" href="assets/images/developer_logo_bgblack.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div id="pop">
+        <div class="modal-bg" >
+            <div class="modal-box modal-a" id="pull-pop-callback">
+                <div class="header">
+                    <h3 id="pull-pop-callback-header">Status</h3>
+                    <button id="pull-pop-callback-delete">Delete Lead</button>
+                </div>
+                <div class="details">
+                    <div class="details-1">
+                        <div>
+                            <label for="pull-pop-callback-first-name">First Name:</label>
+                            <input type="text" id="pull-pop-callback-first-name" placeholder="Enter first name">
+                        </div>
+                        <div>
+                            <label for="pull-pop-callback-last-name">Last Name:</label>
+                            <input type="text" id="pull-pop-callback-last-name" placeholder="Enter last name">
+                        </div>
+                    </div>
+                    <div class="details-2">
+                        <div>
+                            <label for="pull-pop-callback-phone">Contact Number:</label>
+                            <input type="text" id="pull-pop-callback-phone" placeholder="Enter phone">
+                        </div>
+                        <div>
+                            <label for="pull-pop-callback-province">Province:</label>
+                            <input type="text" id="pull-pop-callback-province" placeholder="Enter province">
+                        </div>
+                    </div>
+                    <div class="details-3">
+                        <label for="pull-pop-callback-address">Complete Address:</label>
+                        <input type="text" id="pull-pop-callback-address" placeholder="Enter full address">
+                    </div>
+                    <div class="details-p">
+                        <div>
+                            <label for="pull-pop-callback-order">Order:</label>
+                            <h5 id="pull-pop-callback-order">Brand X</h5>
+                        </div>
+                        <div>
+                            <label for="pull-pop-callback-price">Price:</label>
+                            <h5 id="pull-pop-callback-price">$ 25.00</h5>
+                        </div>
+                    </div>
+                    <div class="details-4">
+                        <label for="pull-pop-callback-note">Notes:</label>
+                        <textarea name="notation" id="pull-pop-callback-note" cols="30" rows="3"></textarea>
+                    </div>
+                    <div class="details-5">
+                        <div class="details-5-1">
+                            <select name='select-product' id='select-product'>
+                            </select>
+                            <button id="pull-pop-callback-confirm">Confirm Order</button>
+                        </div>
+                        <div class="details-5-2">
+                            <div>
+                                <input type="checkbox" id="schedule" name="schedule" value=false>
+                                <label for="schedule">Schedule a Call</label><br>
+                            </div>
+                            <input type="datetime-local" id="calendar">
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-cancel-save">
+                    <button id="pull-pop-callback-cancel">Cancel</button>
+                    <button id="pull-pop-callback-save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <aside id="left" class="bg-a">
+        <div class="logo">
+            <img src="assets/images/nexus360 _logo_white_bg_none.png" alt="">
+        </div>
+        <ul class="side-items">
+            <li id="on-load" class="side-menu-item"><i class='bx bxs-dashboard fc-a'></i><a class="fc-a" href="#dashboard">Dashboard</a></li>
+            <li class="side-menu-item"><i class='bx bxs-report fc-a'></i><a class="fc-a" href="#reports">Reports</a></li>
+            <li class="side-menu-item"><i class='bx bxs-server fc-a'></i><a class="fc-a" href="#deals">Deals Status</a></li>
+            <li class="side-menu-item"><i class='bx bxs-phone-outgoing fc-a'></i><a class="fc-a" href="#callbacks">Scheduled Calls</a></li>
+            <li class="side-menu-item"><i class='bx bxs-bank fc-a'></i><a class="fc-a" href="#leads">Leads Bank</a></li>
+            <li class="side-menu-item"><i class='bx bxs-collection fc-a'></i><a class="fc-a" href="#products">My Products</a></li>
+            <li class="side-menu-item"><i class='bx bxs-group fc-a'></i><a class="fc-a" href="#team">My Team</a></li>
+        </ul>
+    </aside>
+    <aside id="right">
+        <nav>
+            <section class="burg">
+                <div>
+                    <i id="side-toggler" class='bx bx-menu ic-a'></i>
+                </div>
+                <div class="search">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search..." id="search-bar">
+                </div>
+            </section>
+            <section class="user" id="user-menu">
+                <div>
+                    <p>Hey</p>
+                    <h5>Patrick</h5>
+                </div>
+                <img src="assets/images/sample_user.jfif" alt="User">
+            </section>
+        </nav>
+        <main id="content-area">
+        </main>
+    </aside>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
