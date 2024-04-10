@@ -150,6 +150,7 @@ body {
 #right main {
     margin-top: 100px; 
 }
+
 /* dashboard starts here */
 #dash-cards {
     padding: 40px 40px 0 40px;
@@ -585,7 +586,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: start;
-    transition: 0.3 ease;
+    transition: 1s ease;
 }
 
 .modal-box {
@@ -593,6 +594,7 @@ body {
     background-color: white;
     padding: 20px;
     margin-top: 50px;
+    transition: 1s ease;
 }
 
 .modal-box h3 {
@@ -626,7 +628,12 @@ body {
     font-weight: 900;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
+}
+
+#add-new-product .details,
+#edit-product-details .details {
+    margin-bottom: 50px;
 }
 
 .details .details-1,
@@ -678,6 +685,18 @@ body {
     border: 3px solid gray;
     border-radius: 5px;
     background-color: gray;
+    overflow: auto;
+    overflow-wrap: break-word;
+}
+
+.details .details-4 #show-notes {
+    height: auto;
+    padding: 15px 10px 15px 30px;
+    width: 88%;
+    font-size: 15px;
+    color: black;
+    overflow: auto;
+    overflow-wrap: break-word;
 }
 
 .details .details-3 h5 {
@@ -699,6 +718,11 @@ body {
     align-items: flex-start;
     width: 650px;
     margin: 0 0 15px 30px;
+}
+
+.details .details-t {
+    width: 650px;
+    margin: 30px 0 40px 30px;
 }
 
 #pull-pop-deals .details .details-4 {
@@ -747,6 +771,15 @@ body {
     width: 100%;
 }
 
+.details .details-t select {
+    padding: 10px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    font-size: 15px;
+    color: black;
+    width: 88%;
+}
+
 .details .details-5 .details-5-2 div {
     width: 80%;
     margin-bottom: 10px;
@@ -760,7 +793,15 @@ body {
     color: black;
 }
 
+.none {
+    display: none;
+}
+
 #add-new-lead .btn-cancel-save,
+#edit-product-details .btn-cancel-save,
+#add-new-user .btn-cancel-save,
+#edit-user-details .btn-cancel-save,
+#add-new-product .btn-cancel-save,
 #pull-pop-bank .btn-cancel-save,
 #pull-pop-callback .btn-cancel-save,
 #pull-pop-deals .btn-cancel-save {
@@ -770,7 +811,15 @@ body {
 }
 
 #add-new-lead-cancel,
-#add-new-lead-save,
+#add-new-lead-add,
+#add-new-user-cancel,
+#add-new-user-add,
+#edit-user-details-cancel,
+#edit-user-details-save,
+#edit-product-details-save,
+#edit-product-details-cancel,
+#add-new-product-cancel,
+#add-new-product-add,
 #pull-pop-bank-delete,
 #pull-pop-bank-confirm,
 #pull-pop-bank-cancel,
@@ -788,10 +837,14 @@ body {
     font-weight: 900;
     border-radius: 5px;
     cursor: pointer;
-    transition: 0.3 ease;
+    transition: 0.3s ease;
 }
 
 #add-new-lead-cancel,
+#add-new-product-cancel,
+#add-new-user-cancel,
+#edit-user-details-cancel,
+#edit-product-details-cancel,
 #pull-pop-bank-cancel,
 #pull-pop-callback-cancel,
 #pull-pop-deals-cancel,
@@ -803,6 +856,10 @@ body {
 }
 
 #add-new-lead-cancel:hover,
+#add-new-product-cancel:hover,
+#add-new-user-cancel:hover,
+#edit-user-details-cancel:hover,
+#edit-product-details-cancel:hover,
 #pull-pop-bank-cancel:hover,
 #pull-pop-callback-cancel:hover,
 #pull-pop-deals-cancel:hover,
@@ -811,6 +868,10 @@ body {
 }
 
 #add-new-lead-cancel:active,
+#add-new-product-cancel:active,
+#add-new-user-cancel:active,
+#edit-user-details-cancel:active,
+#edit-product-details-cancel:active,
 #pull-pop-bank-cancel:active,
 #pull-pop-callback-cancel:active,
 #pull-pop-deals-cancel:active,
@@ -818,7 +879,11 @@ body {
     background-color: #ff6f00;
 }
 
-#add-new-lead-save,
+#add-new-lead-add,
+#add-new-product-add,
+#add-new-user-add,
+#edit-user-details-save,
+#edit-product-details-save,
 #pull-pop-bank-save,
 #pull-pop-callback-save,
 #pull-pop-deals-save,
@@ -828,7 +893,11 @@ body {
     color: white;
 }
 
-#add-new-lead-save:hover,
+#add-new-lead-add:hover,
+#add-new-product-add:hover,
+#add-new-user-add:hover,
+#edit-user-details-save:hover,
+#edit-product-details-save:hover,
 #pull-pop-bank-save:hover,
 #pull-pop-callback-save:hover,
 #pull-pop-deals-save:hover,
@@ -836,7 +905,11 @@ body {
     background-color: #2e7d32d2;
 }
 
-#add-new-lead-save:active,
+#add-new-lead-add:active,
+#add-new-product-add:active,
+#add-new-user-add:active,
+#edit-user-details-save:active,
+#edit-product-details-save:active,
 #pull-pop-bank-active,
 #pull-pop-callback-active,
 #pull-pop-deals-active,
@@ -901,8 +974,6 @@ body {
 #pull-pop-callback-confirm:active {
     background-color: #0d47a1;
 }
-
-
 
 @keyframes loadPage {
     from {
