@@ -8,6 +8,8 @@ const Users = [];
 const Prospects = [];
 const Products = [];
 const Statuses = [];
+const Reports = [];
+const SalesData = [];
 let parseData = () => {
     let xhr = new XMLHttpRequest;
     xhr.open("GET", "assets/data/db.json", true);
@@ -103,11 +105,13 @@ let loadMenuA = (data1,data2) => {
         <section id='dash-graphs'>
             <div class='graph'>
                 <div id='sales-graph'>
+                <img src="assets/images/bar.png" alt="Bar-Graph">
                 </div>
                 <h3>Sales Trend</h3>
             </div>
             <div class='graph'>
                 <div id='product-graph'>
+                <img src="assets/images/line.png" alt="Line-Graph">
                 </div>
                 <h3>Top Selling Product</h3>
             </div>
@@ -124,14 +128,16 @@ let loadMenuB = () => {
             </select>
             <select name='select-chart' id='select-chart'>
                 <option value=''>Select Chart</option>
-                <option value='report-table'>Table</option>
-                <option value='report-bar'>Bar Graph</option>
-                <option value='report-line'>Line Graph</option>
-                <option value='report-pie'>Pie Chart</option>
+                <option value='table'>Table</option>
+                <option value='bar'>Bar Graph</option>
+                <option value='line'>Line Graph</option>
+                <option value='pie'>Pie Chart</option>
             </select>
-            <button class='bc-a'>
+            <button class='bc-a'onclick="getDataB()">
                 <i class='bx bx-customize'></i>
             </button> 
+        </section>
+        <section class='report-container'>
         </section>`;
 };
 let loadMenuC = () =>  {
@@ -393,9 +399,12 @@ let putModalC1 = (data1,data2) => {
             if(data2 != b.id) continue;
             a.order_status = b.status_name;
         };
+        let dateNow = new Date();
+        if(data2 == 4) a.status_date_change = dateNow;
     };  
     document.querySelector('#pop').innerHTML = "";
     getDataC(Prospects);
+    console.log(Prospects);
 };
 let getModalC2 = data1 => {
     for(const a of Prospects) {
